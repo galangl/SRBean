@@ -1,7 +1,7 @@
 # SR900 <-> HiBean Bridge
 
 ESP32-S3 firmware that talks to your real SR900 roaster using its actual
-(fully cracked) protocol, and exposes a simple custom BLE service that
+(until they encrypt it) protocol, and exposes a simple custom BLE service that
 HiBean's "Custom TC4" device type can connect to.
 
 ## Build and flash
