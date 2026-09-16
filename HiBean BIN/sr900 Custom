@@ -1,0 +1,74 @@
+{
+  "kind": "hibean.tc4.custom.profile",
+  "profileVersion": 1,
+  "config": {
+    "schemaVersion": 2,
+    "transportType": "ble",
+    "transport": {
+      "identifier": "24:EC:4A:30:8D:EE",
+      "serviceUuid": "7a9e0001-1234-4a5e-8b3d-9f1e2c3a4b50",
+      "writeCharacteristicUuid": "7a9e0003-1234-4a5e-8b3d-9f1e2c3a4b50",
+      "notifyCharacteristicUuid": "7a9e0002-1234-4a5e-8b3d-9f1e2c3a4b50"
+    },
+    "initializationCommands": [],
+    "statusPolling": {
+      "command": "READ",
+      "intervalMillis": 2000,
+      "messageSeparator": "\n",
+      "fields": [
+        {
+          "signal": "bean_temperature",
+          "type": "double",
+          "index": 0
+        },
+        {
+          "signal": "fan_speed",
+          "type": "double",
+          "index": 2
+        },
+        {
+          "signal": "heater_power",
+          "type": "double",
+          "index": 3
+        }
+      ]
+    },
+    "actuatorCommandSeparator": "\n",
+    "actuators": {
+      "heater": {
+        "enabled": true,
+        "mode": "range",
+        "commandTemplate": "HEAT;{value}",
+        "safeValue": 0,
+        "range": {
+          "min": 0,
+          "max": 9,
+          "step": 1
+        }
+      },
+      "fan": {
+        "enabled": true,
+        "mode": "range",
+        "commandTemplate": "FAN;{value}",
+        "safeValue": 0,
+        "range": {
+          "min": 0,
+          "max": 9,
+          "step": 1
+        }
+      },
+      "drum": {
+        "enabled": false,
+        "mode": "toggle",
+        "commandTemplate": "",
+        "safeValue": 0
+      },
+      "coolingFan": {
+        "enabled": false,
+        "mode": "toggle",
+        "commandTemplate": "",
+        "safeValue": 0
+      }
+    }
+  }
+}
