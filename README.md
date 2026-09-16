@@ -83,3 +83,19 @@ HiBean before starting.
 3. Connect HiBean to `ESP32-SR900-Bridge` and confirm status reads populate.
 4. Only after status is confirmed working, test a control (start with Heat
    or Fan, at a safe idle value) before trusting it during a real roast.
+
+
+SR900–HiBean ESP32 Bridge
+
+Adapted from the Artisan SR900 driver in Brian Schmitt’s sr900-support branch:
+https://github.com/brianschmitt/artisan/tree/sr900-support
+
+Original code copyright © 2010–2026 The Artisan Team, represented by Marko Luther and all contributors.
+
+ESP32/HiBean adaptation and modifications by Lloyd Galang, 2026.
+
+This project is free software, licensed under the GNU Affero General Public License, version 3 or, at your option, any later version.
+
+Provided without warranty, including any implied warranty of merchantability or fitness for a particular purpose.
+
+This is an independent community project, not an official Fresh Roast, Artisan, or HiBean product.
