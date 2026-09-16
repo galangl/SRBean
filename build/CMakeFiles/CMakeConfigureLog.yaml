@@ -1,0 +1,264 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Espressif/tools/cmake/4.0.3/share/cmake-4.0/Modules/CMakeDetermineSystem.cmake:200 (message)"
+      - "C:/esp/v6.1/esp-idf/tools/cmake/project.cmake:717 (__project)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      The target system is: Generic -  - 
+      The host system is: Windows - 10.0.26200 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Espressif/tools/cmake/4.0.3/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Espressif/tools/cmake/4.0.3/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Espressif/tools/cmake/4.0.3/share/cmake-4.0/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "C:/esp/v6.1/esp-idf/tools/cmake/project.cmake:717 (__project)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: C:/Espressif/tools/xtensa-esp-elf/esp-15.2.0_20251204/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc.exe 
+      Build flags: @C:/SW Project/SRW900/build/toolchain/cflags
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        C:/SW Project/SRW900/build/CMakeFiles/4.0.3/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Espressif/tools/cmake/4.0.3/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Espressif/tools/cmake/4.0.3/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Espressif/tools/cmake/4.0.3/share/cmake-4.0/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "C:/esp/v6.1/esp-idf/tools/cmake/project.cmake:717 (__project)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: C:/Espressif/tools/xtensa-esp-elf/esp-15.2.0_20251204/xtensa-esp-elf/bin/xtensa-esp32s3-elf-g++.exe 
+      Build flags: @C:/SW Project/SRW900/build/toolchain/cxxflags
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        C:/SW Project/SRW900/build/CMakeFiles/4.0.3/CompilerIdCXX/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Espressif/tools/cmake/4.0.3/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:1271 (message)"
+      - "C:/Espressif/tools/cmake/4.0.3/share/cmake-4.0/Modules/CMakeDetermineASMCompiler.cmake:139 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "C:/esp/v6.1/esp-idf/tools/cmake/project.cmake:717 (__project)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
+      xtensa-esp-elf-gcc.exe (crosstool-NG esp-15.2.0_20251204) 15.2.0
+      Copyright (C) 2025 Free Software Foundation, Inc.
+      This is free software; see the source for copying conditions.  There is NO
+      warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Espressif/tools/cmake/4.0.3/share/cmake-4.0/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "C:/Espressif/tools/cmake/4.0.3/share/cmake-4.0/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "C:/Espressif/tools/cmake/4.0.3/share/cmake-4.0/Modules/FindThreads.cmake:97 (check_c_source_compiles)"
+      - "C:/Espressif/tools/cmake/4.0.3/share/cmake-4.0/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "C:/esp/v6.1/esp-idf/components/mbedtls/mbedtls/CMakeLists.txt:127 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "C:/SW Project/SRW900/build/CMakeFiles/CMakeScratch/TryCompile-r386mo"
+      binary: "C:/SW Project/SRW900/build/CMakeFiles/CMakeScratch/TryCompile-r386mo"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "@\"C:/SW Project/SRW900/build/toolchain/cflags\""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "@\"C:/SW Project/SRW900/build/toolchain/ldflags\""
+      CMAKE_MODULE_PATH: "C:/esp/v6.1/esp-idf/tools/cmake;C:/esp/v6.1/esp-idf/tools/cmake/third_party"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/SW Project/SRW900/build/CMakeFiles/CMakeScratch/TryCompile-r386mo'
+        
+        Run Build Command(s): C:/Espressif/tools/ninja/1.12.1/ninja.exe -v cmTC_5c758
+        [1/2] C:\\Espressif\\tools\\xtensa-esp-elf\\esp-15.2.0_20251204\\xtensa-esp-elf\\bin\\xtensa-esp32s3-elf-gcc.exe -DCMAKE_HAVE_LIBC_PTHREAD  @"C:/SW Project/SRW900/build/toolchain/cflags" -o CMakeFiles/cmTC_5c758.dir/src.c.obj -c "C:/SW Project/SRW900/build/CMakeFiles/CMakeScratch/TryCompile-r386mo/src.c"
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\Espressif\\tools\\cmake\\4.0.3\\bin\\cmake.exe -E rm -f libcmTC_5c758.a && C:\\Espressif\\tools\\xtensa-esp-elf\\esp-15.2.0_20251204\\xtensa-esp-elf\\bin\\xtensa-esp32s3-elf-ar.exe qc libcmTC_5c758.a  CMakeFiles/cmTC_5c758.dir/src.c.obj && C:\\Espressif\\tools\\xtensa-esp-elf\\esp-15.2.0_20251204\\xtensa-esp-elf\\bin\\xtensa-esp32s3-elf-ranlib.exe libcmTC_5c758.a && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Espressif/tools/cmake/4.0.3/share/cmake-4.0/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "C:/Espressif/tools/cmake/4.0.3/share/cmake-4.0/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/Espressif/tools/cmake/4.0.3/share/cmake-4.0/Modules/CheckCCompilerFlag.cmake:56 (cmake_check_compiler_flag)"
+      - "C:/esp/v6.1/esp-idf/components/mbedtls/mbedtls/tf-psa-crypto/CMakeLists.txt:263 (CHECK_C_COMPILER_FLAG)"
+      - "C:/esp/v6.1/esp-idf/components/mbedtls/mbedtls/tf-psa-crypto/CMakeLists.txt:227 (tf_psa_crypto_set_gnu_base_compile_options)"
+      - "C:/esp/v6.1/esp-idf/components/mbedtls/mbedtls/tf-psa-crypto/drivers/everest/CMakeLists.txt:16 (tf_psa_crypto_set_base_compile_options)"
+    checks:
+      - "Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS"
+    directories:
+      source: "C:/SW Project/SRW900/build/CMakeFiles/CMakeScratch/TryCompile-zy67km"
+      binary: "C:/SW Project/SRW900/build/CMakeFiles/CMakeScratch/TryCompile-zy67km"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "@\"C:/SW Project/SRW900/build/toolchain/cflags\""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "@\"C:/SW Project/SRW900/build/toolchain/ldflags\""
+      CMAKE_MODULE_PATH: "C:/esp/v6.1/esp-idf/tools/cmake;C:/esp/v6.1/esp-idf/tools/cmake/third_party"
+    buildResult:
+      variable: "C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/SW Project/SRW900/build/CMakeFiles/CMakeScratch/TryCompile-zy67km'
+        
+        Run Build Command(s): C:/Espressif/tools/ninja/1.12.1/ninja.exe -v cmTC_dc1e3
+        [1/2] C:\\Espressif\\tools\\xtensa-esp-elf\\esp-15.2.0_20251204\\xtensa-esp-elf\\bin\\xtensa-esp32s3-elf-gcc.exe -DC_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS  @"C:/SW Project/SRW900/build/toolchain/cflags"  -std=c17   -Wformat-signedness -o CMakeFiles/cmTC_dc1e3.dir/src.c.obj -c "C:/SW Project/SRW900/build/CMakeFiles/CMakeScratch/TryCompile-zy67km/src.c"
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\Espressif\\tools\\cmake\\4.0.3\\bin\\cmake.exe -E rm -f libcmTC_dc1e3.a && C:\\Espressif\\tools\\xtensa-esp-elf\\esp-15.2.0_20251204\\xtensa-esp-elf\\bin\\xtensa-esp32s3-elf-ar.exe qc libcmTC_dc1e3.a  CMakeFiles/cmTC_dc1e3.dir/src.c.obj && C:\\Espressif\\tools\\xtensa-esp-elf\\esp-15.2.0_20251204\\xtensa-esp-elf\\bin\\xtensa-esp32s3-elf-ranlib.exe libcmTC_dc1e3.a && cd ."
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Espressif/tools/cmake/4.0.3/share/cmake-4.0/Modules/CMakeDetermineSystem.cmake:200 (message)"
+      - "C:/esp/v6.1/esp-idf/tools/cmake/project.cmake:717 (__project)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      The target system is: Generic -  - 
+      The host system is: Windows - 10.0.26200 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Espressif/tools/cmake/4.0.3/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Espressif/tools/cmake/4.0.3/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Espressif/tools/cmake/4.0.3/share/cmake-4.0/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "C:/esp/v6.1/esp-idf/tools/cmake/project.cmake:717 (__project)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: C:/Espressif/tools/xtensa-esp-elf/esp-15.2.0_20251204/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc.exe 
+      Build flags: @C:/SW Project/SRW900/build/toolchain/cflags
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        C:/SW Project/SRW900/build/CMakeFiles/4.0.3/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Espressif/tools/cmake/4.0.3/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Espressif/tools/cmake/4.0.3/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Espressif/tools/cmake/4.0.3/share/cmake-4.0/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "C:/esp/v6.1/esp-idf/tools/cmake/project.cmake:717 (__project)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: C:/Espressif/tools/xtensa-esp-elf/esp-15.2.0_20251204/xtensa-esp-elf/bin/xtensa-esp32s3-elf-g++.exe 
+      Build flags: @C:/SW Project/SRW900/build/toolchain/cxxflags
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        C:/SW Project/SRW900/build/CMakeFiles/4.0.3/CompilerIdCXX/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Espressif/tools/cmake/4.0.3/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:1271 (message)"
+      - "C:/Espressif/tools/cmake/4.0.3/share/cmake-4.0/Modules/CMakeDetermineASMCompiler.cmake:139 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "C:/esp/v6.1/esp-idf/tools/cmake/project.cmake:717 (__project)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
+      xtensa-esp-elf-gcc.exe (crosstool-NG esp-15.2.0_20251204) 15.2.0
+      Copyright (C) 2025 Free Software Foundation, Inc.
+      This is free software; see the source for copying conditions.  There is NO
+      warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Espressif/tools/cmake/4.0.3/share/cmake-4.0/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "C:/Espressif/tools/cmake/4.0.3/share/cmake-4.0/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "C:/Espressif/tools/cmake/4.0.3/share/cmake-4.0/Modules/FindThreads.cmake:97 (check_c_source_compiles)"
+      - "C:/Espressif/tools/cmake/4.0.3/share/cmake-4.0/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "C:/esp/v6.1/esp-idf/components/mbedtls/mbedtls/CMakeLists.txt:127 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "C:/SW Project/SRW900/build/CMakeFiles/CMakeScratch/TryCompile-22s0gu"
+      binary: "C:/SW Project/SRW900/build/CMakeFiles/CMakeScratch/TryCompile-22s0gu"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "@\"C:/SW Project/SRW900/build/toolchain/cflags\""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "@\"C:/SW Project/SRW900/build/toolchain/ldflags\""
+      CMAKE_MODULE_PATH: "C:/esp/v6.1/esp-idf/tools/cmake;C:/esp/v6.1/esp-idf/tools/cmake/third_party"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/SW Project/SRW900/build/CMakeFiles/CMakeScratch/TryCompile-22s0gu'
+        
+        Run Build Command(s): C:/Espressif/tools/ninja/1.12.1/ninja.exe -v cmTC_79abd
+        [1/2] C:\\Espressif\\tools\\xtensa-esp-elf\\esp-15.2.0_20251204\\xtensa-esp-elf\\bin\\xtensa-esp32s3-elf-gcc.exe -DCMAKE_HAVE_LIBC_PTHREAD  @"C:/SW Project/SRW900/build/toolchain/cflags" -o CMakeFiles/cmTC_79abd.dir/src.c.obj -c "C:/SW Project/SRW900/build/CMakeFiles/CMakeScratch/TryCompile-22s0gu/src.c"
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\Espressif\\tools\\cmake\\4.0.3\\bin\\cmake.exe -E rm -f libcmTC_79abd.a && C:\\Espressif\\tools\\xtensa-esp-elf\\esp-15.2.0_20251204\\xtensa-esp-elf\\bin\\xtensa-esp32s3-elf-ar.exe qc libcmTC_79abd.a  CMakeFiles/cmTC_79abd.dir/src.c.obj && C:\\Espressif\\tools\\xtensa-esp-elf\\esp-15.2.0_20251204\\xtensa-esp-elf\\bin\\xtensa-esp32s3-elf-ranlib.exe libcmTC_79abd.a && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Espressif/tools/cmake/4.0.3/share/cmake-4.0/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "C:/Espressif/tools/cmake/4.0.3/share/cmake-4.0/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/Espressif/tools/cmake/4.0.3/share/cmake-4.0/Modules/CheckCCompilerFlag.cmake:56 (cmake_check_compiler_flag)"
+      - "C:/esp/v6.1/esp-idf/components/mbedtls/mbedtls/tf-psa-crypto/CMakeLists.txt:263 (CHECK_C_COMPILER_FLAG)"
+      - "C:/esp/v6.1/esp-idf/components/mbedtls/mbedtls/tf-psa-crypto/CMakeLists.txt:227 (tf_psa_crypto_set_gnu_base_compile_options)"
+      - "C:/esp/v6.1/esp-idf/components/mbedtls/mbedtls/tf-psa-crypto/drivers/everest/CMakeLists.txt:16 (tf_psa_crypto_set_base_compile_options)"
+    checks:
+      - "Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS"
+    directories:
+      source: "C:/SW Project/SRW900/build/CMakeFiles/CMakeScratch/TryCompile-7nzzzq"
+      binary: "C:/SW Project/SRW900/build/CMakeFiles/CMakeScratch/TryCompile-7nzzzq"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "@\"C:/SW Project/SRW900/build/toolchain/cflags\""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "@\"C:/SW Project/SRW900/build/toolchain/ldflags\""
+      CMAKE_MODULE_PATH: "C:/esp/v6.1/esp-idf/tools/cmake;C:/esp/v6.1/esp-idf/tools/cmake/third_party"
+    buildResult:
+      variable: "C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/SW Project/SRW900/build/CMakeFiles/CMakeScratch/TryCompile-7nzzzq'
+        
+        Run Build Command(s): C:/Espressif/tools/ninja/1.12.1/ninja.exe -v cmTC_74564
+        [1/2] C:\\Espressif\\tools\\xtensa-esp-elf\\esp-15.2.0_20251204\\xtensa-esp-elf\\bin\\xtensa-esp32s3-elf-gcc.exe -DC_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS  @"C:/SW Project/SRW900/build/toolchain/cflags"  -std=c17   -Wformat-signedness -o CMakeFiles/cmTC_74564.dir/src.c.obj -c "C:/SW Project/SRW900/build/CMakeFiles/CMakeScratch/TryCompile-7nzzzq/src.c"
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\Espressif\\tools\\cmake\\4.0.3\\bin\\cmake.exe -E rm -f libcmTC_74564.a && C:\\Espressif\\tools\\xtensa-esp-elf\\esp-15.2.0_20251204\\xtensa-esp-elf\\bin\\xtensa-esp32s3-elf-ar.exe qc libcmTC_74564.a  CMakeFiles/cmTC_74564.dir/src.c.obj && C:\\Espressif\\tools\\xtensa-esp-elf\\esp-15.2.0_20251204\\xtensa-esp-elf\\bin\\xtensa-esp32s3-elf-ranlib.exe libcmTC_74564.a && cd ."
+        
+      exitCode: 0
+...

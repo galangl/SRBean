@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+C:/SW Project/SRW900/build/CMakeFiles/bootloader
+C:/SW Project/SRW900/build/CMakeFiles/bootloader.rule
+C:/SW Project/SRW900/build/CMakeFiles/bootloader-complete.rule
+C:/SW Project/SRW900/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+C:/SW Project/SRW900/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+C:/SW Project/SRW900/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+C:/SW Project/SRW900/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+C:/SW Project/SRW900/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+C:/SW Project/SRW900/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+C:/SW Project/SRW900/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

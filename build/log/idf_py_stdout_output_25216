@@ -1,0 +1,2131 @@
+Command: C:\Espressif\tools\python\v6.1\venv\Scripts\python.exe C:\esp\v6.1\esp-idf\tools/idf_monitor.py -p COM3 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 C:\SW Project\SRW900\build\sr900_hibean_bridge.elf C:\SW Project\SRW900\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\tools\python\v6.1\venv\Scripts\python.exe' 'C:\esp\v6.1\esp-idf\tools\idf.py' '-p' 'COM3'
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x20 (DOWNLOAD(USB/UART0))
+Saved PC:0x40041a79
+waiting for download
+[0;32mI (351) phy_init: phy_version 712,87e8c20e,Apr 13 2026,18:51:10[0m
+[0;32mI (401) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (421) NimBLE: GAP procedure initiated: stop advertising.[0m
+
+[0;32mI (431) sr900_bridge: NimBLE synced; HiBean status handle=16[0m
+[0;32mI (431) NimBLE: GAP procedure initiated: discovery; [0m
+[0;32mI (431) NimBLE: own_addr_type=0 filter_policy=0 passive=0 limited=0 filter_duplicates=1 [0m
+[0;32mI (441) NimBLE: duration=10000ms[0m
+[0;32mI (441) NimBLE: [0m
+
+[0;32mI (441) sr900_bridge: Scanning for SR900-FDB666[0m
+[0;32mI (451) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (451) NimBLE: disc_mode=2[0m
+[0;32mI (451) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (461) NimBLE: [0m
+
+[0;32mI (461) sr900_bridge: Advertising ESP32-SR900-Bridge[0m
+[0;32mI (471) NimBLE: GAP procedure initiated: connect; [0m
+[0;32mI (471) NimBLE: peer_addr_type=0 peer_addr=[0m
+[0;32mI (481) NimBLE: 50:32:5f:fd:b6:66[0m
+[0;32mI (481) NimBLE:  scan_itvl=16 scan_window=16 itvl_min=80 itvl_max=100 latency=0 supervision_timeout=400 min_ce_len=0 max_ce_len=0 own_addr_type=0[0m
+[0;32mI (491) NimBLE: [0m
+
+[0;32mI (491) main_task: Returned from app_main()[0m
+[0;32mI (1341) NimBLE: Reattempt connection; reason = 0x3e, status = 0,reattempt count = 0 [0m
+[0;32mI (1341) NimBLE: GAP procedure initiated: connect; [0m
+[0;32mI (1341) NimBLE: peer_addr_type=0 peer_addr=[0m
+[0;32mI (1351) NimBLE: 50:32:5f:fd:b6:66[0m
+[0;32mI (1351) NimBLE:  scan_itvl=16 scan_window=16 itvl_min=80 itvl_max=100 latency=0 supervision_timeout=400 min_ce_len=0 max_ce_len=0 own_addr_type=0[0m
+[0;32mI (1361) NimBLE: [0m
+
+[0;32mI (2221) NimBLE: Reattempt connection; reason = 0x3e, status = 0,reattempt count = 1 [0m
+[0;32mI (2221) NimBLE: GAP procedure initiated: connect; [0m
+[0;32mI (2221) NimBLE: peer_addr_type=0 peer_addr=[0m
+[0;32mI (2221) NimBLE: 50:32:5f:fd:b6:66[0m
+[0;32mI (2221) NimBLE:  scan_itvl=16 scan_window=16 itvl_min=80 itvl_max=100 latency=0 supervision_timeout=400 min_ce_len=0 max_ce_len=0 own_addr_type=0[0m
+[0;32mI (2241) NimBLE: [0m
+
+[0;32mI (3091) NimBLE: Reattempt connection; reason = 0x3e, status = 0,reattempt count = 2 [0m
+[0;32mI (3091) NimBLE: GAP procedure initiated: connect; [0m
+[0;32mI (3091) NimBLE: peer_addr_type=0 peer_addr=[0m
+[0;32mI (3101) NimBLE: 50:32:5f:fd:b6:66[0m
+[0;32mI (3101) NimBLE:  scan_itvl=16 scan_window=16 itvl_min=80 itvl_max=100 latency=0 supervision_timeout=400 min_ce_len=0 max_ce_len=0 own_addr_type=0[0m
+[0;32mI (3111) NimBLE: [0m
+
+[0;32mI (9871) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (9871) NimBLE: disc_mode=2[0m
+[0;32mI (9871) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (9881) NimBLE: [0m
+
+[0;32mI (9881) sr900_bridge: Advertising ESP32-SR900-Bridge[0m
+[0;32mI (9891) sr900_bridge: HiBean connected handle=2[0m
+[0;32mI (10601) sr900_bridge: HiBean notify subscription=1[0m
+[0;32mI (15211) sr900_bridge: HiBean command: READ[0m
+
+[0;33mW (15211) sr900_bridge: READ rejected: ready=0 subscribed=1 fault=0[0m
+[0;32mI (20261) sr900_bridge: HiBean notify subscription=0[0m
+[0;33mW (20261) sr900_bridge: HiBean disconnected reason=531; no automatic machine stop[0m
+[0;33mW (35501) sr900_bridge: connection attempt timeout; cancel rc=2[0m
+[0;32mI (35501) sr900_bridge: SR900 retry in 500 ms[0m
+[0;32mI (36001) NimBLE: GAP procedure initiated: discovery; [0m
+[0;32mI (36001) NimBLE: own_addr_type=0 filter_policy=0 passive=0 limited=0 filter_duplicates=1 [0m
+[0;32mI (36001) NimBLE: duration=10000ms[0m
+[0;32mI (36001) NimBLE: [0m
+
+[0;32mI (36011) sr900_bridge: Scanning for SR900-FDB666[0m
+[0;32mI (36161) NimBLE: GAP procedure initiated: connect; [0m
+[0;32mI (36161) NimBLE: peer_addr_type=0 peer_addr=[0m
+[0;32mI (36161) NimBLE: 50:32:5f:fd:b6:66[0m
+[0;32mI (36161) NimBLE:  scan_itvl=16 scan_window=16 itvl_min=80 itvl_max=100 latency=0 supervision_timeout=400 min_ce_len=0 max_ce_len=0 own_addr_type=0[0m
+[0;32mI (36181) NimBLE: [0m
+
+[0;32mI (37221) NimBLE: Reattempt connection; reason = 0x3e, status = 0,reattempt count = 0 [0m
+[0;32mI (37221) NimBLE: GAP procedure initiated: connect; [0m
+[0;32mI (37221) NimBLE: peer_addr_type=0 peer_addr=[0m
+[0;32mI (37221) NimBLE: 50:32:5f:fd:b6:66[0m
+[0;32mI (37221) NimBLE:  scan_itvl=16 scan_window=16 itvl_min=80 itvl_max=100 latency=0 supervision_timeout=400 min_ce_len=0 max_ce_len=0 own_addr_type=0[0m
+[0;32mI (37241) NimBLE: [0m
+
+[0;32mI (38091) NimBLE: Reattempt connection; reason = 0x3e, status = 0,reattempt count = 1 [0m
+[0;32mI (38091) NimBLE: GAP procedure initiated: connect; [0m
+[0;32mI (38091) NimBLE: peer_addr_type=0 peer_addr=[0m
+[0;32mI (38101) NimBLE: 50:32:5f:fd:b6:66[0m
+[0;32mI (38101) NimBLE:  scan_itvl=16 scan_window=16 itvl_min=80 itvl_max=100 latency=0 supervision_timeout=400 min_ce_len=0 max_ce_len=0 own_addr_type=0[0m
+[0;32mI (38111) NimBLE: [0m
+
+[0;32mI (39341) NimBLE: Reattempt connection; reason = 0x3e, status = 0,reattempt count = 2 [0m
+[0;32mI (39341) NimBLE: GAP procedure initiated: connect; [0m
+[0;32mI (39341) NimBLE: peer_addr_type=0 peer_addr=[0m
+[0;32mI (39351) NimBLE: 50:32:5f:fd:b6:66[0m
+[0;32mI (39351) NimBLE:  scan_itvl=16 scan_window=16 itvl_min=80 itvl_max=100 latency=0 supervision_timeout=400 min_ce_len=0 max_ce_len=0 own_addr_type=0[0m
+[0;32mI (39361) NimBLE: [0m
+
+[0;32mI (57711) sr900_bridge: HiBean connected handle=3[0m
+[0;32mI (58401) sr900_bridge: HiBean notify subscription=1[0m
+[0;32mI (58441) sr900_bridge: HiBean command: READ[0m
+
+[0;33mW (58451) sr900_bridge: READ rejected: ready=0 subscribed=1 fault=0[0m
+[0;32mI (63611) sr900_bridge: HiBean notify subscription=0[0m
+[0;33mW (63611) sr900_bridge: HiBean disconnected reason=531; no automatic machine stop[0m
+[0;32mI (63611) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (63621) NimBLE: disc_mode=2[0m
+[0;32mI (63621) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (63631) NimBLE: [0m
+
+[0;32mI (63631) sr900_bridge: Advertising ESP32-SR900-Bridge[0m
+[0;33mW (71241) sr900_bridge: connection attempt timeout; cancel rc=2[0m
+[0;32mI (71241) sr900_bridge: SR900 retry in 1000 ms[0m
+[0;32mI (72241) NimBLE: GAP procedure initiated: discovery; [0m
+[0;32mI (72241) NimBLE: own_addr_type=0 filter_policy=0 passive=0 limited=0 filter_duplicates=1 [0m
+[0;32mI (72241) NimBLE: duration=10000ms[0m
+[0;32mI (72251) NimBLE: [0m
+
+[0;32mI (72251) sr900_bridge: Scanning for SR900-FDB666[0m
+[0;32mI (72391) NimBLE: GAP procedure initiated: connect; [0m
+[0;32mI (72391) NimBLE: peer_addr_type=0 peer_addr=[0m
+[0;32mI (72391) NimBLE: 50:32:5f:fd:b6:66[0m
+[0;32mI (72391) NimBLE:  scan_itvl=16 scan_window=16 itvl_min=80 itvl_max=100 latency=0 supervision_timeout=400 min_ce_len=0 max_ce_len=0 own_addr_type=0[0m
+[0;32mI (72411) NimBLE: [0m
+
+[0;32mI (73341) NimBLE: Reattempt connection; reason = 0x3e, status = 0,reattempt count = 0 [0m
+[0;32mI (73341) NimBLE: GAP procedure initiated: connect; [0m
+[0;32mI (73341) NimBLE: peer_addr_type=0 peer_addr=[0m
+[0;32mI (73351) NimBLE: 50:32:5f:fd:b6:66[0m
+[0;32mI (73351) NimBLE:  scan_itvl=16 scan_window=16 itvl_min=80 itvl_max=100 latency=0 supervision_timeout=400 min_ce_len=0 max_ce_len=0 own_addr_type=0[0m
+[0;32mI (73361) NimBLE: [0m
+
+[0;32mI (74591) NimBLE: Reattempt connection; reason = 0x3e, status = 0,reattempt count = 1 [0m
+[0;32mI (74591) NimBLE: GAP procedure initiated: connect; [0m
+[0;32mI (74591) NimBLE: peer_addr_type=0 peer_addr=[0m
+[0;32mI (74601) NimBLE: 50:32:5f:fd:b6:66[0m
+[0;32mI (74601) NimBLE:  scan_itvl=16 scan_window=16 itvl_min=80 itvl_max=100 latency=0 supervision_timeout=400 min_ce_len=0 max_ce_len=0 own_addr_type=0[0m
+[0;32mI (74611) NimBLE: [0m
+
+[0;32mI (75591) NimBLE: Reattempt connection; reason = 0x3e, status = 0,reattempt count = 2 [0m
+[0;32mI (75591) NimBLE: GAP procedure initiated: connect; [0m
+[0;32mI (75591) NimBLE: peer_addr_type=0 peer_addr=[0m
+[0;32mI (75601) NimBLE: 50:32:5f:fd:b6:66[0m
+[0;32mI (75601) NimBLE:  scan_itvl=16 scan_window=16 itvl_min=80 itvl_max=100 latency=0 supervision_timeout=400 min_ce_len=0 max_ce_len=0 own_addr_type=0[0m
+[0;32mI (75611) NimBLE: [0m
+
+[0;32mI (76091) sr900_bridge: SR900 connected handle=3; exchanging MTU[0m
+[0;32mI (76091) NimBLE: GATT procedure initiated: exchange mtu[0m
+
+[0;32mI (76091) sr900_bridge: MTU exchange already active/completed; waiting for MTU >= 37 (actual=64)[0m
+[0;32mI (76171) sr900_bridge: SR900 MTU ready: 64; starting service discovery[0m
+[0;32mI (76171) NimBLE: GATT procedure initiated: discover service by uuid; uuid=[0m
+[0;32mI (76171) NimBLE: 0xdf00[0m
+[0;32mI (76171) NimBLE: [0m
+
+[0;32mI (78971) NimBLE: GATT procedure initiated: discover all characteristics; [0m
+[0;32mI (78971) NimBLE: start_handle=25 end_handle=30[0m
+
+[0;32mI (80091) NimBLE: GATT procedure initiated: discover all descriptors; [0m
+[0;32mI (80091) NimBLE: chr_val_handle=27 end_handle=28[0m
+
+[0;32mI (81471) NimBLE: GATT procedure initiated: write; [0m
+[0;32mI (81471) NimBLE: att_handle=28 len=2[0m
+
+[0;32mI (82221) sr900_bridge: Subscribed to SR900 notifications[0m
+[0;32mI (82221) sr900_bridge: TX acknowledged write type=38 id=0 len=34 MTU=64[0m
+[0;32mI (82221) NimBLE: GATT procedure initiated: write; [0m
+[0;32mI (82221) NimBLE: att_handle=30 len=34[0m
+
+[0;32mI (82721) sr900_bridge: TX complete type=38 id=0 ATT status=0[0m
+[0;32mI (83721) sr900_bridge: MAC received; scheduling settings[0m
+[0;32mI (83721) sr900_bridge: TX acknowledged write type=43 id=0 len=34 MTU=64[0m
+[0;32mI (83721) NimBLE: GATT procedure initiated: write; [0m
+[0;32mI (83721) NimBLE: att_handle=30 len=34[0m
+
+[0;32mI (84471) sr900_bridge: TX complete type=43 id=0 ATT status=0[0m
+[0;32mI (84971) sr900_bridge: STATUS seq=1 fan=9 heater=2 BT=76F ET=97F[0m
+[0;32mI (87091) sr900_bridge: STATUS seq=2 fan=9 heater=2 BT=76F ET=96F[0m
+[0;32mI (87341) sr900_bridge: SETTINGS ACKED[0m
+[0;32mI (87341) sr900_bridge: SR900 READY: settings and ATT write acknowledged[0m
+[0;32mI (89091) sr900_bridge: STATUS seq=3 fan=9 heater=2 BT=76F ET=97F[0m
+[0;32mI (91341) sr900_bridge: STATUS seq=4 fan=9 heater=2 BT=75F ET=96F[0m
+[0;32mI (93091) sr900_bridge: STATUS seq=5 fan=9 heater=2 BT=75F ET=97F[0m
+[0;32mI (95341) sr900_bridge: STATUS seq=6 fan=9 heater=2 BT=76F ET=96F[0m
+[0;32mI (98591) sr900_bridge: STATUS seq=7 fan=9 heater=2 BT=75F ET=96F[0m
+[0;32mI (98591) sr900_bridge: STATUS seq=8 fan=9 heater=2 BT=75F ET=97F[0m
+[0;32mI (100471) sr900_bridge: STATUS seq=9 fan=9 heater=2 BT=75F ET=96F[0m
+[0;32mI (102471) sr900_bridge: STATUS seq=10 fan=9 heater=2 BT=76F ET=97F[0m
+[0;32mI (104861) sr900_bridge: HiBean connected handle=2[0m
+[0;32mI (105501) sr900_bridge: HiBean notify subscription=1[0m
+[0;32mI (105591) sr900_bridge: STATUS seq=11 fan=9 heater=2 BT=75F ET=96F[0m
+[0;32mI (106341) sr900_bridge: STATUS seq=12 fan=9 heater=2 BT=76F ET=97F[0m
+[0;32mI (108721) sr900_bridge: STATUS seq=13 fan=9 heater=2 BT=75F ET=96F[0m
+[0;32mI (109991) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (109991) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (109991) NimBLE: att_handle=16[0m
+
+[0;32mI (109991) sr900_bridge: READ response queued: 75,96,9,2 sample_age=1275ms[0m
+[0;32mI (111091) sr900_bridge: STATUS seq=14 fan=9 heater=2 BT=76F ET=96F[0m
+[0;32mI (112091) sr900_bridge: STATUS seq=15 fan=9 heater=2 BT=75F ET=96F[0m
+[0;32mI (114221) sr900_bridge: STATUS seq=16 fan=9 heater=2 BT=75F ET=96F[0m
+[0;32mI (116591) sr900_bridge: STATUS seq=17 fan=9 heater=2 BT=75F ET=96F[0m
+[0;32mI (118091) sr900_bridge: STATUS seq=18 fan=9 heater=2 BT=76F ET=96F[0m
+[0;32mI (120221) sr900_bridge: STATUS seq=19 fan=9 heater=2 BT=76F ET=96F[0m
+[0;32mI (121841) sr900_bridge: STATUS seq=20 fan=9 heater=2 BT=75F ET=96F[0m
+[0;32mI (123721) sr900_bridge: STATUS seq=21 fan=9 heater=2 BT=76F ET=96F[0m
+[0;32mI (125201) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (125201) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (125201) NimBLE: att_handle=16[0m
+
+[0;32mI (125201) sr900_bridge: READ response queued: 76,96,9,2 sample_age=1485ms[0m
+[0;32mI (126221) sr900_bridge: STATUS seq=22 fan=9 heater=2 BT=75F ET=96F[0m
+[0;32mI (127591) sr900_bridge: STATUS seq=23 fan=9 heater=2 BT=76F ET=96F[0m
+[0;32mI (128421) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (128421) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (128421) NimBLE: att_handle=16[0m
+
+[0;32mI (128421) sr900_bridge: READ response queued: 76,96,9,2 sample_age=827ms[0m
+[0;32mI (128511) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (128511) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (128511) NimBLE: att_handle=16[0m
+
+[0;32mI (128521) sr900_bridge: READ response queued: 76,96,9,2 sample_age=925ms[0m
+[0;32mI (128611) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (128611) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (128611) NimBLE: att_handle=16[0m
+
+[0;32mI (128611) sr900_bridge: READ response queued: 76,96,9,2 sample_age=1022ms[0m
+[0;32mI (129721) sr900_bridge: STATUS seq=24 fan=9 heater=2 BT=75F ET=96F[0m
+[0;32mI (131971) sr900_bridge: STATUS seq=25 fan=9 heater=2 BT=76F ET=96F[0m
+[0;32mI (134091) sr900_bridge: STATUS seq=26 fan=9 heater=2 BT=75F ET=96F[0m
+[0;32mI (135471) sr900_bridge: STATUS seq=27 fan=9 heater=2 BT=75F ET=96F[0m
+[0;32mI (137971) sr900_bridge: STATUS seq=28 fan=9 heater=2 BT=76F ET=96F[0m
+[0;32mI (138751) sr900_bridge: HiBean notify subscription=0[0m
+[0;33mW (138751) sr900_bridge: HiBean disconnected reason=531; no automatic machine stop[0m
+[0;32mI (138751) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (138761) NimBLE: disc_mode=2[0m
+[0;32mI (138761) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (138771) NimBLE: [0m
+
+[0;32mI (138771) sr900_bridge: Advertising ESP32-SR900-Bridge[0m
+[0;32mI (139341) sr900_bridge: STATUS seq=29 fan=9 heater=2 BT=75F ET=96F[0m
+[0;32mI (141841) sr900_bridge: STATUS seq=30 fan=9 heater=2 BT=76F ET=96F[0m
+[0;32mI (143471) sr900_bridge: STATUS seq=31 fan=9 heater=2 BT=75F ET=96F[0m
+[0;32mI (145341) sr900_bridge: STATUS seq=32 fan=9 heater=2 BT=76F ET=96F[0m
+[0;32mI (147341) sr900_bridge: STATUS seq=33 fan=9 heater=2 BT=76F ET=96F[0m
+[0;32mI (148971) sr900_bridge: STATUS seq=34 fan=9 heater=2 BT=75F ET=96F[0m
+[0;32mI (150971) sr900_bridge: STATUS seq=35 fan=9 heater=2 BT=76F ET=96F[0m
+[0;32mI (153221) sr900_bridge: STATUS seq=36 fan=9 heater=2 BT=75F ET=96F[0m
+[0;32mI (155841) sr900_bridge: STATUS seq=37 fan=9 heater=2 BT=76F ET=96F[0m
+[0;32mI (156971) sr900_bridge: STATUS seq=38 fan=9 heater=2 BT=75F ET=95F[0m
+[0;32mI (158841) sr900_bridge: STATUS seq=39 fan=9 heater=2 BT=76F ET=96F[0m
+[0;32mI (161471) sr900_bridge: STATUS seq=40 fan=9 heater=2 BT=75F ET=96F[0m
+[0;32mI (162591) sr900_bridge: STATUS seq=41 fan=9 heater=2 BT=75F ET=96F[0m
+[0;32mI (164591) sr900_bridge: STATUS seq=42 fan=9 heater=2 BT=76F ET=96F[0m
+[0;32mI (166471) sr900_bridge: STATUS seq=43 fan=9 heater=2 BT=75F ET=96F[0m
+[0;32mI (168471) sr900_bridge: STATUS seq=44 fan=9 heater=2 BT=76F ET=96F[0m
+[0;32mI (170471) sr900_bridge: STATUS seq=45 fan=9 heater=2 BT=75F ET=95F[0m
+[0;32mI (172971) sr900_bridge: STATUS seq=46 fan=9 heater=2 BT=76F ET=95F[0m
+[0;32mI (174971) sr900_bridge: STATUS seq=47 fan=9 heater=2 BT=75F ET=96F[0m
+[0;32mI (176721) sr900_bridge: STATUS seq=48 fan=9 heater=2 BT=75F ET=95F[0m
+[0;32mI (178591) sr900_bridge: STATUS seq=49 fan=9 heater=2 BT=76F ET=96F[0m
+[0;32mI (181221) sr900_bridge: STATUS seq=50 fan=9 heater=2 BT=75F ET=95F[0m
+[0;32mI (182091) sr900_bridge: STATUS seq=51 fan=9 heater=2 BT=76F ET=96F[0m
+[0;32mI (183971) sr900_bridge: STATUS seq=52 fan=9 heater=2 BT=76F ET=96F[0m
+[0;32mI (185971) sr900_bridge: STATUS seq=53 fan=9 heater=2 BT=76F ET=95F[0m
+[0;32mI (187971) sr900_bridge: STATUS seq=54 fan=9 heater=2 BT=76F ET=95F[0m
+[0;32mI (190221) sr900_bridge: STATUS seq=55 fan=9 heater=2 BT=75F ET=95F[0m
+[0;32mI (192091) sr900_bridge: STATUS seq=56 fan=9 heater=2 BT=76F ET=96F[0m
+[1;31mE (192141) NimBLE: ble_gap_adv_validate rc=6[0m
+
+[1;31mE (192141) sr900_bridge: advertise start rc=6[0m
+[0;32mI (192171) sr900_bridge: HiBean connected handle=2[0m
+[0;32mI (192861) sr900_bridge: HiBean notify subscription=1[0m
+[0;32mI (193721) sr900_bridge: STATUS seq=57 fan=9 heater=2 BT=75F ET=95F[0m
+[0;32mI (195591) sr900_bridge: STATUS seq=58 fan=9 heater=2 BT=76F ET=96F[0m
+[0;32mI (197591) sr900_bridge: STATUS seq=59 fan=9 heater=2 BT=75F ET=95F[0m
+[0;32mI (199971) sr900_bridge: STATUS seq=60 fan=9 heater=2 BT=76F ET=95F[0m
+[0;32mI (201611) sr900_bridge: HiBean notify subscription=0[0m
+[0;33mW (201611) sr900_bridge: HiBean disconnected reason=531; no automatic machine stop[0m
+[0;32mI (201611) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (201611) NimBLE: disc_mode=2[0m
+[0;32mI (201621) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (201621) NimBLE: [0m
+
+[0;32mI (201631) sr900_bridge: Advertising ESP32-SR900-Bridge[0m
+[0;32mI (201721) sr900_bridge: STATUS seq=61 fan=9 heater=2 BT=75F ET=95F[0m
+[0;32mI (203591) sr900_bridge: STATUS seq=62 fan=9 heater=2 BT=75F ET=95F[0m
+[0;32mI (205341) sr900_bridge: STATUS seq=63 fan=9 heater=2 BT=76F ET=96F[0m
+[0;32mI (207221) sr900_bridge: STATUS seq=64 fan=9 heater=2 BT=75F ET=95F[0m
+[0;32mI (209471) sr900_bridge: STATUS seq=65 fan=9 heater=2 BT=76F ET=96F[0m
+[0;32mI (211221) sr900_bridge: STATUS seq=66 fan=9 heater=2 BT=75F ET=95F[0m
+[0;32mI (213091) sr900_bridge: STATUS seq=67 fan=9 heater=2 BT=76F ET=95F[0m
+[0;32mI (215721) sr900_bridge: STATUS seq=68 fan=9 heater=2 BT=75F ET=95F[0m
+[1;31mE (217061) NimBLE: ble_gap_adv_validate rc=6[0m
+
+[1;31mE (217061) sr900_bridge: advertise start rc=6[0m
+[0;32mI (217091) sr900_bridge: HiBean connected handle=2[0m
+[0;32mI (217091) sr900_bridge: STATUS seq=69 fan=9 heater=2 BT=75F ET=95F[0m
+[0;32mI (217751) sr900_bridge: HiBean notify subscription=1[0m
+[0;32mI (219091) sr900_bridge: STATUS seq=70 fan=9 heater=2 BT=76F ET=95F[0m
+[0;32mI (221721) sr900_bridge: STATUS seq=71 fan=9 heater=2 BT=75F ET=95F[0m
+[0;32mI (223021) sr900_bridge: HiBean notify subscription=0[0m
+[0;33mW (223021) sr900_bridge: HiBean disconnected reason=531; no automatic machine stop[0m
+[0;32mI (223031) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (223031) NimBLE: disc_mode=2[0m
+[0;32mI (223031) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (223041) NimBLE: [0m
+
+[0;32mI (223051) sr900_bridge: Advertising ESP32-SR900-Bridge[0m
+[0;32mI (223091) sr900_bridge: STATUS seq=72 fan=9 heater=2 BT=76F ET=95F[0m
+[0;32mI (224841) sr900_bridge: STATUS seq=73 fan=9 heater=2 BT=75F ET=95F[0m
+[0;32mI (226971) sr900_bridge: STATUS seq=74 fan=9 heater=2 BT=76F ET=95F[0m
+[0;32mI (228591) sr900_bridge: STATUS seq=75 fan=9 heater=2 BT=76F ET=95F[0m
+[0;32mI (230971) sr900_bridge: STATUS seq=76 fan=9 heater=2 BT=75F ET=95F[0m
+[0;32mI (232471) sr900_bridge: STATUS seq=77 fan=9 heater=2 BT=76F ET=95F[0m
+[0;32mI (234471) sr900_bridge: STATUS seq=78 fan=9 heater=2 BT=75F ET=95F[0m
+[0;32mI (236341) sr900_bridge: STATUS seq=79 fan=9 heater=2 BT=76F ET=95F[0m
+[0;32mI (238471) sr900_bridge: STATUS seq=80 fan=9 heater=2 BT=75F ET=95F[0m
+[0;32mI (240341) sr900_bridge: STATUS seq=81 fan=9 heater=2 BT=76F ET=95F[0m
+[0;32mI (242341) sr900_bridge: STATUS seq=82 fan=9 heater=2 BT=76F ET=95F[0m
+[0;32mI (244721) sr900_bridge: STATUS seq=83 fan=9 heater=2 BT=75F ET=95F[0m
+[0;32mI (246091) sr900_bridge: STATUS seq=84 fan=9 heater=2 BT=76F ET=95F[0m
+[0;32mI (248221) sr900_bridge: STATUS seq=85 fan=9 heater=2 BT=75F ET=95F[0m
+[1;31mE (250471) NimBLE: ble_gap_adv_validate rc=6[0m
+
+[1;31mE (250471) sr900_bridge: advertise start rc=6[0m
+[0;32mI (250501) sr900_bridge: HiBean connected handle=2[0m
+[0;32mI (251091) sr900_bridge: STATUS seq=86 fan=9 heater=2 BT=76F ET=95F[0m
+[0;32mI (251171) sr900_bridge: HiBean notify subscription=1[0m
+[0;32mI (253091) sr900_bridge: STATUS seq=87 fan=9 heater=2 BT=75F ET=95F[0m
+[0;32mI (254341) sr900_bridge: STATUS seq=88 fan=9 heater=2 BT=76F ET=95F[0m
+[0;32mI (256221) sr900_bridge: STATUS seq=89 fan=9 heater=2 BT=75F ET=95F[0m
+[0;32mI (257361) sr900_bridge: HiBean notify subscription=0[0m
+[0;33mW (257361) sr900_bridge: HiBean disconnected reason=531; no automatic machine stop[0m
+[0;32mI (257361) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (257371) NimBLE: disc_mode=2[0m
+[0;32mI (257371) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (257381) NimBLE: [0m
+
+[0;32mI (257381) sr900_bridge: Advertising ESP32-SR900-Bridge[0m
+[0;32mI (258221) sr900_bridge: STATUS seq=90 fan=9 heater=2 BT=75F ET=95F[0m
+[0;32mI (259721) sr900_bridge: STATUS seq=91 fan=9 heater=2 BT=76F ET=95F[0m
+[0;32mI (261841) sr900_bridge: STATUS seq=92 fan=9 heater=2 BT=75F ET=95F[0m
+[0;32mI (263591) sr900_bridge: STATUS seq=93 fan=9 heater=2 BT=76F ET=95F[0m
+[0;32mI (265591) sr900_bridge: STATUS seq=94 fan=9 heater=2 BT=76F ET=95F[0m
+[0;32mI (267471) sr900_bridge: STATUS seq=95 fan=9 heater=2 BT=75F ET=95F[0m
+[0;32mI (270471) sr900_bridge: STATUS seq=96 fan=9 heater=2 BT=76F ET=95F[0m
+[0;33mW (274591) sr900_bridge: SR900 disconnected reason=520[0m
+[1;31mE (274591) sr900_bridge: HiBean session failed: SR900 disconnected; cannot confirm machine state; machine state is not guaranteed[0m
+[0;32mI (274601) sr900_bridge: SR900 retry in 500 ms[0m
+[0;32mI (275101) NimBLE: GAP procedure initiated: discovery; [0m
+[0;32mI (275101) NimBLE: own_addr_type=0 filter_policy=0 passive=0 limited=0 filter_duplicates=1 [0m
+[0;32mI (275101) NimBLE: duration=10000ms[0m
+[0;32mI (275111) NimBLE: [0m
+
+[0;32mI (275111) sr900_bridge: Scanning for SR900-FDB666[0m
+[0;32mI (276741) NimBLE: GAP procedure initiated: connect; [0m
+[0;32mI (276741) NimBLE: peer_addr_type=0 peer_addr=[0m
+[0;32mI (276741) NimBLE: 50:32:5f:fd:b6:66[0m
+[0;32mI (276741) NimBLE:  scan_itvl=16 scan_window=16 itvl_min=80 itvl_max=100 latency=0 supervision_timeout=400 min_ce_len=0 max_ce_len=0 own_addr_type=0[0m
+[0;32mI (276751) NimBLE: [0m
+
+[0;32mI (277721) NimBLE: Reattempt connection; reason = 0x3e, status = 0,reattempt count = 0 [0m
+[0;32mI (277721) NimBLE: GAP procedure initiated: connect; [0m
+[0;32mI (277721) NimBLE: peer_addr_type=0 peer_addr=[0m
+[0;32mI (277721) NimBLE: 50:32:5f:fd:b6:66[0m
+[0;32mI (277731) NimBLE:  scan_itvl=16 scan_window=16 itvl_min=80 itvl_max=100 latency=0 supervision_timeout=400 min_ce_len=0 max_ce_len=0 own_addr_type=0[0m
+[0;32mI (277741) NimBLE: [0m
+
+[0;32mI (278591) NimBLE: Reattempt connection; reason = 0x3e, status = 0,reattempt count = 1 [0m
+[0;32mI (278591) NimBLE: GAP procedure initiated: connect; [0m
+[0;32mI (278591) NimBLE: peer_addr_type=0 peer_addr=[0m
+[0;32mI (278601) NimBLE: 50:32:5f:fd:b6:66[0m
+[0;32mI (278601) NimBLE:  scan_itvl=16 scan_window=16 itvl_min=80 itvl_max=100 latency=0 supervision_timeout=400 min_ce_len=0 max_ce_len=0 own_addr_type=0[0m
+[0;32mI (278611) NimBLE: [0m
+
+[0;32mI (281091) NimBLE: Reattempt connection; reason = 0x3e, status = 0,reattempt count = 2 [0m
+[0;32mI (281091) NimBLE: GAP procedure initiated: connect; [0m
+[0;32mI (281091) NimBLE: peer_addr_type=0 peer_addr=[0m
+[0;32mI (281101) NimBLE: 50:32:5f:fd:b6:66[0m
+[0;32mI (281101) NimBLE:  scan_itvl=16 scan_window=16 itvl_min=80 itvl_max=100 latency=0 supervision_timeout=400 min_ce_len=0 max_ce_len=0 own_addr_type=0[0m
+[0;32mI (281111) NimBLE: [0m
+
+[0;33mW (311831) sr900_bridge: connection attempt timeout; cancel rc=2[0m
+[0;32mI (311831) sr900_bridge: SR900 retry in 1000 ms[0m
+[0;32mI (312831) NimBLE: GAP procedure initiated: discovery; [0m
+[0;32mI (312831) NimBLE: own_addr_type=0 filter_policy=0 passive=0 limited=0 filter_duplicates=1 [0m
+[0;32mI (312831) NimBLE: duration=10000ms[0m
+[0;32mI (312841) NimBLE: [0m
+
+[0;32mI (312841) sr900_bridge: Scanning for SR900-FDB666[0m
+[0;32mI (312861) NimBLE: GAP procedure initiated: connect; [0m
+[0;32mI (312861) NimBLE: peer_addr_type=0 peer_addr=[0m
+[0;32mI (312861) NimBLE: 50:32:5f:fd:b6:66[0m
+[0;32mI (312861) NimBLE:  scan_itvl=16 scan_window=16 itvl_min=80 itvl_max=100 latency=0 supervision_timeout=400 min_ce_len=0 max_ce_len=0 own_addr_type=0[0m
+[0;32mI (312871) NimBLE: [0m
+
+[0;32mI (314221) NimBLE: Reattempt connection; reason = 0x3e, status = 0,reattempt count = 0 [0m
+[0;32mI (314221) NimBLE: GAP procedure initiated: connect; [0m
+[0;32mI (314221) NimBLE: peer_addr_type=0 peer_addr=[0m
+[0;32mI (314221) NimBLE: 50:32:5f:fd:b6:66[0m
+[0;32mI (314231) NimBLE:  scan_itvl=16 scan_window=16 itvl_min=80 itvl_max=100 latency=0 supervision_timeout=400 min_ce_len=0 max_ce_len=0 own_addr_type=0[0m
+[0;32mI (314241) NimBLE: [0m
+
+[0;32mI (315091) NimBLE: Reattempt connection; reason = 0x3e, status = 0,reattempt count = 1 [0m
+[0;32mI (315091) NimBLE: GAP procedure initiated: connect; [0m
+[0;32mI (315091) NimBLE: peer_addr_type=0 peer_addr=[0m
+[0;32mI (315101) NimBLE: 50:32:5f:fd:b6:66[0m
+[0;32mI (315101) NimBLE:  scan_itvl=16 scan_window=16 itvl_min=80 itvl_max=100 latency=0 supervision_timeout=400 min_ce_len=0 max_ce_len=0 own_addr_type=0[0m
+[0;32mI (315111) NimBLE: [0m
+
+[0;32mI (315971) NimBLE: Reattempt connection; reason = 0x3e, status = 0,reattempt count = 2 [0m
+[0;32mI (315971) NimBLE: GAP procedure initiated: connect; [0m
+[0;32mI (315971) NimBLE: peer_addr_type=0 peer_addr=[0m
+[0;32mI (315971) NimBLE: 50:32:5f:fd:b6:66[0m
+[0;32mI (315981) NimBLE:  scan_itvl=16 scan_window=16 itvl_min=80 itvl_max=100 latency=0 supervision_timeout=400 min_ce_len=0 max_ce_len=0 own_addr_type=0[0m
+[0;32mI (315991) NimBLE: [0m
+
+[0;32mI (317431) sr900_bridge: HiBean connected handle=2[0m
+[0;32mI (318121) sr900_bridge: HiBean notify subscription=1[0m
+[0;32mI (323821) sr900_bridge: HiBean notify subscription=0[0m
+[0;33mW (323821) sr900_bridge: HiBean disconnected reason=531; no automatic machine stop[0m
+[0;32mI (323821) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (323831) NimBLE: disc_mode=2[0m
+[0;32mI (323831) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (323841) NimBLE: [0m
+
+[0;32mI (323841) sr900_bridge: Advertising ESP32-SR900-Bridge[0m
+[0;32mI (329351) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (329351) NimBLE: disc_mode=2[0m
+[0;32mI (329351) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (329361) NimBLE: [0m
+
+[0;32mI (329361) sr900_bridge: Advertising ESP32-SR900-Bridge[0m
+[0;32mI (329381) sr900_bridge: HiBean connected handle=2[0m
+[0;32mI (330091) sr900_bridge: HiBean notify subscription=1[0m
+[0;32mI (330171) sr900_bridge: HiBean command: READ[0m
+
+[0;33mW (330171) sr900_bridge: READ rejected: ready=0 subscribed=1 fault=0[0m
+[0;32mI (335281) sr900_bridge: HiBean notify subscription=0[0m
+[0;33mW (335281) sr900_bridge: HiBean disconnected reason=531; no automatic machine stop[0m
+[0;33mW (347881) sr900_bridge: connection attempt timeout; cancel rc=2[0m
+[0;32mI (347881) sr900_bridge: SR900 retry in 2000 ms[0m
+[0;32mI (349881) NimBLE: GAP procedure initiated: discovery; [0m
+[0;32mI (349881) NimBLE: own_addr_type=0 filter_policy=0 passive=0 limited=0 filter_duplicates=1 [0m
+[0;32mI (349881) NimBLE: duration=10000ms[0m
+[0;32mI (349881) NimBLE: [0m
+
+[0;32mI (349891) sr900_bridge: Scanning for SR900-FDB666[0m
+[0;32mI (349931) NimBLE: GAP procedure initiated: connect; [0m
+[0;32mI (349931) NimBLE: peer_addr_type=0 peer_addr=[0m
+[0;32mI (349931) NimBLE: 50:32:5f:fd:b6:66[0m
+[0;32mI (349931) NimBLE:  scan_itvl=16 scan_window=16 itvl_min=80 itvl_max=100 latency=0 supervision_timeout=400 min_ce_len=0 max_ce_len=0 own_addr_type=0[0m
+[0;32mI (349941) NimBLE: [0m
+
+[0;32mI (350971) NimBLE: Reattempt connection; reason = 0x3e, status = 0,reattempt count = 0 [0m
+[0;32mI (350971) NimBLE: GAP procedure initiated: connect; [0m
+[0;32mI (350971) NimBLE: peer_addr_type=0 peer_addr=[0m
+[0;32mI (350971) NimBLE: 50:32:5f:fd:b6:66[0m
+[0;32mI (350981) NimBLE:  scan_itvl=16 scan_window=16 itvl_min=80 itvl_max=100 latency=0 supervision_timeout=400 min_ce_len=0 max_ce_len=0 own_addr_type=0[0m
+[0;32mI (350991) NimBLE: [0m
+
+[0;32mI (351841) NimBLE: Reattempt connection; reason = 0x3e, status = 0,reattempt count = 1 [0m
+[0;32mI (351841) NimBLE: GAP procedure initiated: connect; [0m
+[0;32mI (351841) NimBLE: peer_addr_type=0 peer_addr=[0m
+[0;32mI (351851) NimBLE: 50:32:5f:fd:b6:66[0m
+[0;32mI (351851) NimBLE:  scan_itvl=16 scan_window=16 itvl_min=80 itvl_max=100 latency=0 supervision_timeout=400 min_ce_len=0 max_ce_len=0 own_addr_type=0[0m
+[0;32mI (351861) NimBLE: [0m
+
+[0;32mI (353091) NimBLE: Reattempt connection; reason = 0x3e, status = 0,reattempt count = 2 [0m
+[0;32mI (353091) NimBLE: GAP procedure initiated: connect; [0m
+[0;32mI (353091) NimBLE: peer_addr_type=0 peer_addr=[0m
+[0;32mI (353101) NimBLE: 50:32:5f:fd:b6:66[0m
+[0;32mI (353101) NimBLE:  scan_itvl=16 scan_window=16 itvl_min=80 itvl_max=100 latency=0 supervision_timeout=400 min_ce_len=0 max_ce_len=0 own_addr_type=0[0m
+[0;32mI (353111) NimBLE: [0m
+
+[0;32mI (353471) sr900_bridge: SR900 connected handle=2; exchanging MTU[0m
+[0;32mI (353471) NimBLE: GATT procedure initiated: exchange mtu[0m
+
+[0;32mI (353471) sr900_bridge: MTU exchange already active/completed; waiting for MTU >= 37 (actual=64)[0m
+[0;32mI (353521) sr900_bridge: SR900 MTU ready: 64; starting service discovery[0m
+[0;32mI (353521) NimBLE: GATT procedure initiated: discover service by uuid; uuid=[0m
+[0;32mI (353521) NimBLE: 0xdf00[0m
+[0;32mI (353521) NimBLE: [0m
+
+[0;32mI (354721) NimBLE: GATT procedure initiated: discover all characteristics; [0m
+[0;32mI (354721) NimBLE: start_handle=25 end_handle=30[0m
+
+[0;32mI (355721) NimBLE: GATT procedure initiated: discover all descriptors; [0m
+[0;32mI (355721) NimBLE: chr_val_handle=27 end_handle=28[0m
+
+[0;32mI (356221) NimBLE: GATT procedure initiated: write; [0m
+[0;32mI (356221) NimBLE: att_handle=28 len=2[0m
+
+[0;32mI (356471) sr900_bridge: Subscribed to SR900 notifications[0m
+[0;32mI (356471) sr900_bridge: TX acknowledged write type=38 id=0 len=34 MTU=64[0m
+[0;32mI (356471) NimBLE: GATT procedure initiated: write; [0m
+[0;32mI (356471) NimBLE: att_handle=30 len=34[0m
+
+[0;32mI (356721) sr900_bridge: TX complete type=38 id=0 ATT status=0[0m
+[0;32mI (357721) sr900_bridge: MAC received; scheduling settings[0m
+[0;32mI (357721) sr900_bridge: TX acknowledged write type=43 id=0 len=34 MTU=64[0m
+[0;32mI (357721) NimBLE: GATT procedure initiated: write; [0m
+[0;32mI (357721) NimBLE: att_handle=30 len=34[0m
+
+[0;32mI (357971) sr900_bridge: TX complete type=43 id=0 ATT status=0[0m
+[0;32mI (360341) sr900_bridge: STATUS seq=1 fan=9 heater=2 BT=75F ET=94F[0m
+[0;32mI (361591) sr900_bridge: SETTINGS ACKED[0m
+[0;32mI (361591) sr900_bridge: SR900 READY: settings and ATT write acknowledged[0m
+[0;32mI (361971) sr900_bridge: STATUS seq=2 fan=9 heater=2 BT=75F ET=94F[0m
+[0;32mI (364841) sr900_bridge: STATUS seq=3 fan=9 heater=2 BT=75F ET=94F[0m
+[0;32mI (366221) sr900_bridge: STATUS seq=4 fan=9 heater=2 BT=76F ET=94F[0m
+[0;32mI (368091) sr900_bridge: STATUS seq=5 fan=9 heater=2 BT=75F ET=94F[0m
+[0;32mI (369721) sr900_bridge: STATUS seq=6 fan=9 heater=2 BT=76F ET=94F[0m
+[0;32mI (371841) sr900_bridge: STATUS seq=7 fan=9 heater=2 BT=76F ET=94F[0m
+[0;32mI (374221) sr900_bridge: STATUS seq=8 fan=9 heater=2 BT=75F ET=94F[0m
+[0;32mI (375721) sr900_bridge: STATUS seq=9 fan=9 heater=2 BT=76F ET=94F[0m
+[0;32mI (377471) sr900_bridge: STATUS seq=10 fan=9 heater=2 BT=75F ET=94F[0m
+[0;32mI (382341) sr900_bridge: STATUS seq=11 fan=9 heater=2 BT=76F ET=94F[0m
+[0;32mI (385091) sr900_bridge: STATUS seq=12 fan=9 heater=2 BT=75F ET=94F[0m
+[0;32mI (385091) sr900_bridge: STATUS seq=13 fan=9 heater=2 BT=76F ET=94F[0m
+[0;32mI (386471) sr900_bridge: STATUS seq=14 fan=9 heater=2 BT=75F ET=94F[0m
+[0;32mI (388471) sr900_bridge: STATUS seq=15 fan=9 heater=2 BT=76F ET=94F[0m
+[1;31mE (390341) NimBLE: ble_gap_adv_validate rc=6[0m
+
+[1;31mE (390341) sr900_bridge: advertise start rc=6[0m
+[0;32mI (390351) sr900_bridge: HiBean connected handle=3[0m
+[0;32mI (391011) sr900_bridge: HiBean notify subscription=1[0m
+[0;32mI (391471) sr900_bridge: STATUS seq=16 fan=9 heater=2 BT=75F ET=94F[0m
+[0;32mI (391471) sr900_bridge: STATUS seq=17 fan=9 heater=2 BT=76F ET=94F[0m
+[0;32mI (394841) sr900_bridge: STATUS seq=18 fan=9 heater=2 BT=75F ET=94F[0m
+[0;32mI (395021) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (395021) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (395021) NimBLE: att_handle=16[0m
+
+[0;32mI (395021) sr900_bridge: READ response queued: 75,94,9,2 sample_age=179ms[0m
+[0;32mI (397161) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (397161) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (397161) NimBLE: att_handle=16[0m
+
+[0;32mI (397171) sr900_bridge: READ response queued: 75,94,9,2 sample_age=2324ms[0m
+[0;32mI (397261) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (397261) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (397261) NimBLE: att_handle=16[0m
+
+[0;32mI (397261) sr900_bridge: READ response queued: 75,94,9,2 sample_age=2422ms[0m
+[0;32mI (397361) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (397361) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (397361) NimBLE: att_handle=16[0m
+
+[0;32mI (397361) sr900_bridge: READ response queued: 75,94,9,2 sample_age=2519ms[0m
+[0;33mW (402841) sr900_bridge: SR900 disconnected reason=520[0m
+[1;31mE (402841) sr900_bridge: HiBean session failed: SR900 disconnected; cannot confirm machine state; machine state is not guaranteed[0m
+[0;32mI (402851) NimBLE: GAP procedure initiated: terminate connection; conn_handle=3 hci_reason=19[0m
+
+[0;32mI (402861) sr900_bridge: SR900 retry in 500 ms[0m
+[0;32mI (402871) sr900_bridge: HiBean notify subscription=0[0m
+[0;33mW (402871) sr900_bridge: HiBean disconnected reason=534; no automatic machine stop[0m
+[0;32mI (402871) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (402881) NimBLE: disc_mode=2[0m
+[0;32mI (402881) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (402891) NimBLE: [0m
+
+[0;32mI (402891) sr900_bridge: Advertising ESP32-SR900-Bridge[0m
+[0;32mI (403361) NimBLE: GAP procedure initiated: discovery; [0m
+[0;32mI (403361) NimBLE: own_addr_type=0 filter_policy=0 passive=0 limited=0 filter_duplicates=1 [0m
+[0;32mI (403361) NimBLE: duration=10000ms[0m
+[0;32mI (403361) NimBLE: [0m
+
+[0;32mI (403371) sr900_bridge: Scanning for SR900-FDB666[0m
+[0;32mI (403461) NimBLE: GAP procedure initiated: connect; [0m
+[0;32mI (403461) NimBLE: peer_addr_type=0 peer_addr=[0m
+[0;32mI (403461) NimBLE: 50:32:5f:fd:b6:66[0m
+[0;32mI (403461) NimBLE:  scan_itvl=16 scan_window=16 itvl_min=80 itvl_max=100 latency=0 supervision_timeout=400 min_ce_len=0 max_ce_len=0 own_addr_type=0[0m
+[0;32mI (403481) NimBLE: [0m
+
+[0;32mI (404341) NimBLE: Reattempt connection; reason = 0x3e, status = 0,reattempt count = 0 [0m
+[0;32mI (404341) NimBLE: GAP procedure initiated: connect; [0m
+[0;32mI (404341) NimBLE: peer_addr_type=0 peer_addr=[0m
+[0;32mI (404351) NimBLE: 50:32:5f:fd:b6:66[0m
+[0;32mI (404351) NimBLE:  scan_itvl=16 scan_window=16 itvl_min=80 itvl_max=100 latency=0 supervision_timeout=400 min_ce_len=0 max_ce_len=0 own_addr_type=0[0m
+[0;32mI (404361) NimBLE: [0m
+
+[0;32mI (405591) NimBLE: Reattempt connection; reason = 0x3e, status = 0,reattempt count = 1 [0m
+[0;32mI (405591) NimBLE: GAP procedure initiated: connect; [0m
+[0;32mI (405591) NimBLE: peer_addr_type=0 peer_addr=[0m
+[0;32mI (405601) NimBLE: 50:32:5f:fd:b6:66[0m
+[0;32mI (405601) NimBLE:  scan_itvl=16 scan_window=16 itvl_min=80 itvl_max=100 latency=0 supervision_timeout=400 min_ce_len=0 max_ce_len=0 own_addr_type=0[0m
+[0;32mI (405611) NimBLE: [0m
+
+[0;32mI (406471) NimBLE: Reattempt connection; reason = 0x3e, status = 0,reattempt count = 2 [0m
+[0;32mI (406471) NimBLE: GAP procedure initiated: connect; [0m
+[0;32mI (406471) NimBLE: peer_addr_type=0 peer_addr=[0m
+[0;32mI (406471) NimBLE: 50:32:5f:fd:b6:66[0m
+[0;32mI (406481) NimBLE:  scan_itvl=16 scan_window=16 itvl_min=80 itvl_max=100 latency=0 supervision_timeout=400 min_ce_len=0 max_ce_len=0 own_addr_type=0[0m
+[0;32mI (406491) NimBLE: [0m
+
+[0;33mW (438511) sr900_bridge: connection attempt timeout; cancel rc=2[0m
+[0;32mI (438511) sr900_bridge: SR900 retry in 1000 ms[0m
+[0;32mI (439511) NimBLE: GAP procedure initiated: discovery; [0m
+[0;32mI (439511) NimBLE: own_addr_type=0 filter_policy=0 passive=0 limited=0 filter_duplicates=1 [0m
+[0;32mI (439511) NimBLE: duration=10000ms[0m
+[0;32mI (439511) NimBLE: [0m
+
+[0;32mI (439521) sr900_bridge: Scanning for SR900-FDB666[0m
+[0;32mI (440011) NimBLE: GAP procedure initiated: connect; [0m
+[0;32mI (440011) NimBLE: peer_addr_type=0 peer_addr=[0m
+[0;32mI (440011) NimBLE: 50:32:5f:fd:b6:66[0m
+[0;32mI (440011) NimBLE:  scan_itvl=16 scan_window=16 itvl_min=80 itvl_max=100 latency=0 supervision_timeout=400 min_ce_len=0 max_ce_len=0 own_addr_type=0[0m
+[0;32mI (440021) NimBLE: [0m
+
+[0;32mI (440971) NimBLE: Reattempt connection; reason = 0x3e, status = 0,reattempt count = 0 [0m
+[0;32mI (440971) NimBLE: GAP procedure initiated: connect; [0m
+[0;32mI (440971) NimBLE: peer_addr_type=0 peer_addr=[0m
+[0;32mI (440971) NimBLE: 50:32:5f:fd:b6:66[0m
+[0;32mI (440981) NimBLE:  scan_itvl=16 scan_window=16 itvl_min=80 itvl_max=100 latency=0 supervision_timeout=400 min_ce_len=0 max_ce_len=0 own_addr_type=0[0m
+[0;32mI (440991) NimBLE: [0m
+
+[0;32mI (441221) sr900_bridge: SR900 connected handle=3; exchanging MTU[0m
+[0;32mI (441221) NimBLE: GATT procedure initiated: exchange mtu[0m
+
+[0;32mI (441221) sr900_bridge: MTU exchange already active/completed; waiting for MTU >= 37 (actual=64)[0m
+[0;32mI (441231) sr900_bridge: SR900 MTU ready: 64; starting service discovery[0m
+[0;32mI (441231) NimBLE: GATT procedure initiated: discover service by uuid; uuid=[0m
+[0;32mI (441241) NimBLE: 0xdf00[0m
+[0;32mI (441241) NimBLE: [0m
+
+[0;32mI (441971) NimBLE: GATT procedure initiated: discover all characteristics; [0m
+[0;32mI (441971) NimBLE: start_handle=25 end_handle=30[0m
+
+[0;32mI (444471) NimBLE: GATT procedure initiated: discover all descriptors; [0m
+[0;32mI (444471) NimBLE: chr_val_handle=27 end_handle=28[0m
+
+[0;32mI (446221) NimBLE: GATT procedure initiated: write; [0m
+[0;32mI (446221) NimBLE: att_handle=28 len=2[0m
+
+[0;32mI (446971) sr900_bridge: Subscribed to SR900 notifications[0m
+[0;32mI (446971) sr900_bridge: TX acknowledged write type=38 id=0 len=34 MTU=64[0m
+[0;32mI (446971) NimBLE: GATT procedure initiated: write; [0m
+[0;32mI (446971) NimBLE: att_handle=30 len=34[0m
+
+[0;32mI (447471) sr900_bridge: TX complete type=38 id=0 ATT status=0[0m
+[0;32mI (449091) sr900_bridge: MAC received; scheduling settings[0m
+[0;32mI (449091) sr900_bridge: TX acknowledged write type=43 id=0 len=34 MTU=64[0m
+[0;32mI (449091) NimBLE: GATT procedure initiated: write; [0m
+[0;32mI (449101) NimBLE: att_handle=30 len=34[0m
+
+[0;32mI (449971) sr900_bridge: TX complete type=43 id=0 ATT status=0[0m
+[0;32mI (451091) sr900_bridge: STATUS seq=1 fan=9 heater=2 BT=75F ET=94F[0m
+[0;32mI (452341) sr900_bridge: SETTINGS ACKED[0m
+[0;32mI (452341) sr900_bridge: SR900 READY: settings and ATT write acknowledged[0m
+[0;32mI (452471) sr900_bridge: STATUS seq=2 fan=9 heater=2 BT=76F ET=94F[0m
+[0;32mI (455091) sr900_bridge: STATUS seq=3 fan=9 heater=2 BT=76F ET=94F[0m
+[0;32mI (456341) sr900_bridge: STATUS seq=4 fan=9 heater=2 BT=75F ET=93F[0m
+[0;32mI (459221) sr900_bridge: STATUS seq=5 fan=9 heater=2 BT=76F ET=94F[0m
+[0;32mI (460721) sr900_bridge: STATUS seq=6 fan=9 heater=2 BT=75F ET=93F[0m
+[0;32mI (463471) sr900_bridge: STATUS seq=7 fan=9 heater=2 BT=76F ET=94F[0m
+[0;32mI (465221) sr900_bridge: STATUS seq=8 fan=9 heater=2 BT=76F ET=93F[0m
+[0;32mI (467091) sr900_bridge: STATUS seq=9 fan=9 heater=2 BT=75F ET=94F[0m
+[0;32mI (467971) sr900_bridge: STATUS seq=10 fan=9 heater=2 BT=75F ET=94F[0m
+[0;32mI (470341) sr900_bridge: STATUS seq=11 fan=9 heater=2 BT=75F ET=93F[0m
+[0;32mI (472221) sr900_bridge: STATUS seq=12 fan=9 heater=2 BT=76F ET=94F[0m
+[0;32mI (474221) sr900_bridge: STATUS seq=13 fan=9 heater=2 BT=75F ET=93F[0m
+[0;32mI (475721) sr900_bridge: STATUS seq=14 fan=9 heater=2 BT=76F ET=94F[0m
+[0;32mI (477721) sr900_bridge: STATUS seq=15 fan=9 heater=2 BT=75F ET=93F[0m
+[0;32mI (479591) sr900_bridge: STATUS seq=16 fan=9 heater=2 BT=76F ET=93F[0m
+[0;32mI (482471) sr900_bridge: STATUS seq=17 fan=9 heater=2 BT=76F ET=94F[0m
+[0;32mI (483721) sr900_bridge: STATUS seq=18 fan=9 heater=2 BT=75F ET=93F[0m
+[0;32mI (486341) sr900_bridge: STATUS seq=19 fan=9 heater=2 BT=76F ET=94F[0m
+[0;32mI (488341) sr900_bridge: STATUS seq=20 fan=9 heater=2 BT=75F ET=93F[0m
+[0;32mI (489971) sr900_bridge: STATUS seq=21 fan=9 heater=2 BT=76F ET=94F[0m
+[0;32mI (491471) sr900_bridge: STATUS seq=22 fan=9 heater=2 BT=75F ET=93F[0m
+[0;32mI (493591) sr900_bridge: STATUS seq=23 fan=9 heater=2 BT=76F ET=94F[0m
+[0;32mI (495221) sr900_bridge: STATUS seq=24 fan=9 heater=2 BT=75F ET=93F[0m
+[0;32mI (497721) sr900_bridge: STATUS seq=25 fan=9 heater=2 BT=76F ET=93F[0m
+[0;32mI (499591) sr900_bridge: STATUS seq=26 fan=9 heater=2 BT=76F ET=93F[0m
+[0;32mI (501221) sr900_bridge: STATUS seq=27 fan=9 heater=2 BT=76F ET=93F[0m
+[0;32mI (502971) sr900_bridge: STATUS seq=28 fan=9 heater=2 BT=76F ET=94F[0m
+[0;32mI (504971) sr900_bridge: STATUS seq=29 fan=9 heater=2 BT=75F ET=93F[0m
+[0;32mI (506971) sr900_bridge: STATUS seq=30 fan=9 heater=2 BT=76F ET=94F[0m
+[0;32mI (508841) sr900_bridge: STATUS seq=31 fan=9 heater=2 BT=75F ET=93F[0m
+[0;32mI (510841) sr900_bridge: STATUS seq=32 fan=9 heater=2 BT=76F ET=94F[0m
+[0;32mI (512721) sr900_bridge: STATUS seq=33 fan=9 heater=2 BT=75F ET=93F[0m
+[0;32mI (514721) sr900_bridge: STATUS seq=34 fan=9 heater=2 BT=76F ET=93F[0m
+[0;32mI (516591) sr900_bridge: STATUS seq=35 fan=9 heater=2 BT=76F ET=93F[0m
+[0;32mI (518471) sr900_bridge: STATUS seq=36 fan=9 heater=2 BT=76F ET=93F[0m
+[0;32mI (521471) sr900_bridge: STATUS seq=37 fan=9 heater=2 BT=76F ET=93F[0m
+[0;32mI (523221) sr900_bridge: STATUS seq=38 fan=9 heater=2 BT=75F ET=93F[0m
+[0;32mI (524341) sr900_bridge: STATUS seq=39 fan=9 heater=2 BT=76F ET=93F[0m
+[0;32mI (526721) sr900_bridge: STATUS seq=40 fan=9 heater=2 BT=75F ET=93F[0m
+[0;32mI (528341) sr900_bridge: STATUS seq=41 fan=9 heater=2 BT=76F ET=93F[0m
+[0;32mI (530091) sr900_bridge: STATUS seq=42 fan=9 heater=2 BT=76F ET=93F[0m
+[0;32mI (532591) sr900_bridge: STATUS seq=43 fan=9 heater=2 BT=76F ET=93F[0m
+[0;32mI (533971) sr900_bridge: STATUS seq=44 fan=9 heater=2 BT=76F ET=93F[0m
+[0;32mI (535971) sr900_bridge: STATUS seq=45 fan=9 heater=2 BT=75F ET=93F[0m
+[0;32mI (537971) sr900_bridge: STATUS seq=46 fan=9 heater=2 BT=77F ET=94F[0m
+[0;32mI (539841) sr900_bridge: STATUS seq=47 fan=9 heater=2 BT=75F ET=93F[0m
+[0;32mI (541841) sr900_bridge: STATUS seq=48 fan=9 heater=2 BT=76F ET=93F[0m
+[0;32mI (544341) sr900_bridge: STATUS seq=49 fan=9 heater=2 BT=75F ET=93F[0m
+[0;32mI (545841) sr900_bridge: STATUS seq=50 fan=9 heater=2 BT=76F ET=93F[0m
+[0;32mI (547591) sr900_bridge: STATUS seq=51 fan=9 heater=2 BT=76F ET=93F[0m
+[0;32mI (549721) sr900_bridge: STATUS seq=52 fan=9 heater=2 BT=76F ET=93F[0m
+[0;32mI (551471) sr900_bridge: STATUS seq=53 fan=9 heater=2 BT=76F ET=93F[0m
+[0;32mI (553471) sr900_bridge: STATUS seq=54 fan=9 heater=2 BT=76F ET=93F[0m
+[0;32mI (555341) sr900_bridge: STATUS seq=55 fan=9 heater=2 BT=76F ET=93F[0m
+[0;32mI (557971) sr900_bridge: STATUS seq=56 fan=9 heater=2 BT=75F ET=93F[0m
+[0;32mI (559591) sr900_bridge: STATUS seq=57 fan=9 heater=2 BT=76F ET=93F[0m
+[0;32mI (561221) sr900_bridge: STATUS seq=58 fan=9 heater=2 BT=75F ET=93F[0m
+[0;32mI (563221) sr900_bridge: STATUS seq=59 fan=9 heater=2 BT=76F ET=93F[0m
+[0;32mI (565091) sr900_bridge: STATUS seq=60 fan=9 heater=2 BT=75F ET=93F[0m
+[0;32mI (567341) sr900_bridge: STATUS seq=61 fan=9 heater=2 BT=76F ET=93F[0m
+[0;32mI (569091) sr900_bridge: STATUS seq=62 fan=9 heater=2 BT=76F ET=93F[0m
+[0;32mI (570971) sr900_bridge: STATUS seq=63 fan=9 heater=2 BT=76F ET=93F[0m
+[0;32mI (573221) sr900_bridge: STATUS seq=64 fan=9 heater=2 BT=76F ET=93F[0m
+[0;32mI (575341) sr900_bridge: STATUS seq=65 fan=9 heater=2 BT=75F ET=93F[0m
+[0;32mI (576721) sr900_bridge: STATUS seq=66 fan=9 heater=2 BT=76F ET=93F[0m
+[0;32mI (578721) sr900_bridge: STATUS seq=67 fan=9 heater=2 BT=75F ET=93F[0m
+[0;32mI (580591) sr900_bridge: STATUS seq=68 fan=9 heater=2 BT=76F ET=93F[0m
+[0;32mI (582591) sr900_bridge: STATUS seq=69 fan=9 heater=2 BT=75F ET=93F[0m
+[0;32mI (584471) sr900_bridge: STATUS seq=70 fan=9 heater=2 BT=76F ET=93F[0m
+[0;32mI (586471) sr900_bridge: STATUS seq=71 fan=9 heater=2 BT=76F ET=93F[0m
+[1;31mE (587021) NimBLE: ble_gap_adv_validate rc=6[0m
+
+[1;31mE (587021) sr900_bridge: advertise start rc=6[0m
+[0;32mI (587041) sr900_bridge: HiBean connected handle=2[0m
+[0;32mI (587871) sr900_bridge: HiBean notify subscription=1[0m
+[0;32mI (588471) sr900_bridge: STATUS seq=72 fan=9 heater=2 BT=76F ET=93F[0m
+[0;32mI (590341) sr900_bridge: STATUS seq=73 fan=9 heater=2 BT=76F ET=93F[0m
+[0;32mI (592221) sr900_bridge: STATUS seq=74 fan=9 heater=2 BT=75F ET=93F[0m
+[0;32mI (593301) sr900_bridge: HiBean notify subscription=0[0m
+[0;33mW (593301) sr900_bridge: HiBean disconnected reason=531; no automatic machine stop[0m
+[0;32mI (593301) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (593301) NimBLE: disc_mode=2[0m
+[0;32mI (593311) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (593321) NimBLE: [0m
+
+[0;32mI (593321) sr900_bridge: Advertising ESP32-SR900-Bridge[0m
+[0;32mI (594221) sr900_bridge: STATUS seq=75 fan=9 heater=2 BT=76F ET=93F[0m
+[0;32mI (596221) sr900_bridge: STATUS seq=76 fan=9 heater=2 BT=75F ET=93F[0m
+[0;32mI (598091) sr900_bridge: STATUS seq=77 fan=9 heater=2 BT=76F ET=93F[0m
+[0;32mI (600341) sr900_bridge: STATUS seq=78 fan=9 heater=2 BT=75F ET=92F[0m
+[0;32mI (601971) sr900_bridge: STATUS seq=79 fan=9 heater=2 BT=76F ET=93F[0m
+[0;32mI (603971) sr900_bridge: STATUS seq=80 fan=9 heater=2 BT=75F ET=93F[0m
+[0;32mI (605971) sr900_bridge: STATUS seq=81 fan=9 heater=2 BT=76F ET=93F[0m
+[0;32mI (607841) sr900_bridge: STATUS seq=82 fan=9 heater=2 BT=75F ET=92F[0m
+[0;32mI (609721) sr900_bridge: STATUS seq=83 fan=9 heater=2 BT=76F ET=93F[0m
+[0;32mI (611971) sr900_bridge: STATUS seq=84 fan=9 heater=2 BT=75F ET=93F[0m
+[0;32mI (613721) sr900_bridge: STATUS seq=85 fan=9 heater=2 BT=76F ET=93F[0m
+[0;32mI (615591) sr900_bridge: STATUS seq=86 fan=9 heater=2 BT=75F ET=93F[0m
+[0;32mI (617471) sr900_bridge: STATUS seq=87 fan=9 heater=2 BT=76F ET=93F[0m
+[0;32mI (619471) sr900_bridge: STATUS seq=88 fan=9 heater=2 BT=76F ET=93F[0m
+[0;32mI (621471) sr900_bridge: STATUS seq=89 fan=9 heater=2 BT=76F ET=93F[0m
+[0;32mI (623471) sr900_bridge: STATUS seq=90 fan=9 heater=2 BT=76F ET=92F[0m
+[0;32mI (625341) sr900_bridge: STATUS seq=91 fan=9 heater=2 BT=76F ET=93F[0m
+[0;32mI (627221) sr900_bridge: STATUS seq=92 fan=9 heater=2 BT=75F ET=93F[0m
+[0;32mI (629221) sr900_bridge: STATUS seq=93 fan=9 heater=2 BT=76F ET=93F[0m
+[0;32mI (631091) sr900_bridge: STATUS seq=94 fan=9 heater=2 BT=75F ET=92F[0m
+[0;32mI (633091) sr900_bridge: STATUS seq=95 fan=9 heater=2 BT=76F ET=93F[0m
+[0;32mI (635221) sr900_bridge: STATUS seq=96 fan=9 heater=2 BT=76F ET=92F[0m
+[0;32mI (636141) sr900_bridge: HiBean connected handle=2[0m
+[0;32mI (636861) sr900_bridge: HiBean notify subscription=1[0m
+[0;32mI (636971) sr900_bridge: STATUS seq=97 fan=9 heater=2 BT=76F ET=93F[0m
+[0;32mI (638841) sr900_bridge: STATUS seq=98 fan=9 heater=2 BT=76F ET=92F[0m
+[0;32mI (640841) sr900_bridge: STATUS seq=99 fan=9 heater=2 BT=76F ET=93F[0m
+[0;32mI (642261) sr900_bridge: HiBean notify subscription=0[0m
+[0;33mW (642261) sr900_bridge: HiBean disconnected reason=531; no automatic machine stop[0m
+[0;32mI (642261) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (642271) NimBLE: disc_mode=2[0m
+[0;32mI (642271) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (642281) NimBLE: [0m
+
+[0;32mI (642281) sr900_bridge: Advertising ESP32-SR900-Bridge[0m
+[0;32mI (642721) sr900_bridge: STATUS seq=100 fan=9 heater=2 BT=75F ET=92F[0m
+[0;32mI (643101) sr900_bridge: HiBean connected handle=2[0m
+[0;32mI (643761) sr900_bridge: HiBean notify subscription=1[0m
+[0;32mI (643841) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (643841) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (643841) NimBLE: att_handle=16[0m
+
+[0;32mI (643841) sr900_bridge: READ response queued: 75,92,9,2 sample_age=1122ms[0m
+[0;32mI (644721) sr900_bridge: STATUS seq=101 fan=9 heater=2 BT=76F ET=93F[0m
+[0;32mI (646591) sr900_bridge: STATUS seq=102 fan=9 heater=2 BT=76F ET=92F[0m
+[0;32mI (646811) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (646811) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (646811) NimBLE: att_handle=16[0m
+
+[0;32mI (646811) sr900_bridge: READ response queued: 76,92,9,2 sample_age=221ms[0m
+[0;32mI (646911) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (646911) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (646911) NimBLE: att_handle=16[0m
+
+[0;32mI (646911) sr900_bridge: READ response queued: 76,92,9,2 sample_age=318ms[0m
+[0;32mI (647001) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (647011) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (647011) NimBLE: att_handle=16[0m
+
+[0;32mI (647011) sr900_bridge: READ response queued: 76,92,9,2 sample_age=416ms[0m
+[0;32mI (648591) sr900_bridge: STATUS seq=103 fan=9 heater=2 BT=76F ET=93F[0m
+[0;32mI (650591) sr900_bridge: STATUS seq=104 fan=9 heater=2 BT=75F ET=93F[0m
+[0;32mI (652591) sr900_bridge: STATUS seq=105 fan=9 heater=2 BT=76F ET=93F[0m
+[0;32mI (654591) sr900_bridge: STATUS seq=106 fan=9 heater=2 BT=76F ET=92F[0m
+[0;32mI (656341) sr900_bridge: STATUS seq=107 fan=9 heater=2 BT=76F ET=92F[0m
+[0;32mI (658971) sr900_bridge: STATUS seq=108 fan=9 heater=2 BT=76F ET=92F[0m
+[0;32mI (660021) sr900_bridge: HiBean notify subscription=0[0m
+[0;33mW (660021) sr900_bridge: HiBean disconnected reason=531; no automatic machine stop[0m
+[0;32mI (660021) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (660031) NimBLE: disc_mode=2[0m
+[0;32mI (660031) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (660041) NimBLE: [0m
+
+[0;32mI (660041) sr900_bridge: Advertising ESP32-SR900-Bridge[0m
+[0;32mI (660591) sr900_bridge: STATUS seq=109 fan=9 heater=2 BT=75F ET=92F[0m
+[0;32mI (662221) sr900_bridge: STATUS seq=110 fan=9 heater=2 BT=76F ET=93F[0m
+[0;32mI (664091) sr900_bridge: STATUS seq=111 fan=9 heater=2 BT=75F ET=92F[0m
+[1;31mE (664761) NimBLE: ble_gap_adv_validate rc=6[0m
+
+[1;31mE (664761) sr900_bridge: advertise start rc=6[0m
+[0;32mI (664761) sr900_bridge: HiBean connected handle=2[0m
+[0;32mI (665421) sr900_bridge: HiBean notify subscription=1[0m
+[0;32mI (665501) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (665501) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (665501) NimBLE: att_handle=16[0m
+
+[0;32mI (665501) sr900_bridge: READ response queued: 75,92,9,2 sample_age=1409ms[0m
+[0;32mI (666221) sr900_bridge: STATUS seq=112 fan=9 heater=2 BT=76F ET=93F[0m
+[0;32mI (667591) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (667591) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (667591) NimBLE: att_handle=16[0m
+
+[0;32mI (667601) sr900_bridge: READ response queued: 76,93,9,2 sample_age=1380ms[0m
+[0;32mI (668221) sr900_bridge: STATUS seq=113 fan=9 heater=2 BT=75F ET=92F[0m
+[0;32mI (669641) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (669641) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (669641) NimBLE: att_handle=16[0m
+
+[0;32mI (669641) sr900_bridge: READ response queued: 75,92,9,2 sample_age=1427ms[0m
+[0;32mI (669971) sr900_bridge: STATUS seq=114 fan=9 heater=2 BT=76F ET=93F[0m
+[0;32mI (671841) sr900_bridge: STATUS seq=115 fan=9 heater=2 BT=76F ET=92F[0m
+[0;32mI (673841) sr900_bridge: STATUS seq=116 fan=9 heater=2 BT=76F ET=92F[0m
+[0;32mI (675841) sr900_bridge: STATUS seq=117 fan=9 heater=2 BT=76F ET=92F[0m
+[0;32mI (677841) sr900_bridge: STATUS seq=118 fan=9 heater=2 BT=76F ET=92F[0m
+[0;32mI (679391) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (679391) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (679391) NimBLE: att_handle=16[0m
+
+[0;32mI (679391) sr900_bridge: READ response queued: 76,92,9,2 sample_age=1552ms[0m
+[0;32mI (679721) sr900_bridge: STATUS seq=119 fan=9 heater=2 BT=76F ET=92F[0m
+[0;32mI (681391) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (681391) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (681391) NimBLE: att_handle=16[0m
+
+[0;32mI (681391) sr900_bridge: READ response queued: 76,92,9,2 sample_age=1677ms[0m
+[0;32mI (681491) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (681491) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (681491) NimBLE: att_handle=16[0m
+
+[0;32mI (681491) sr900_bridge: READ response queued: 76,92,9,2 sample_age=1773ms[0m
+[0;32mI (681591) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (681591) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (681591) NimBLE: att_handle=16[0m
+
+[0;32mI (681591) sr900_bridge: READ response queued: 76,92,9,2 sample_age=1871ms[0m
+[0;32mI (681591) sr900_bridge: STATUS seq=120 fan=9 heater=2 BT=76F ET=92F[0m
+[0;32mI (683721) sr900_bridge: STATUS seq=121 fan=9 heater=2 BT=76F ET=92F[0m
+[0;32mI (685471) sr900_bridge: STATUS seq=122 fan=9 heater=2 BT=75F ET=92F[0m
+[0;32mI (687591) sr900_bridge: STATUS seq=123 fan=9 heater=2 BT=76F ET=92F[0m
+[0;32mI (689341) sr900_bridge: STATUS seq=124 fan=9 heater=2 BT=76F ET=92F[0m
+[0;32mI (691341) sr900_bridge: STATUS seq=125 fan=9 heater=2 BT=76F ET=92F[0m
+[0;32mI (693341) sr900_bridge: STATUS seq=126 fan=9 heater=2 BT=76F ET=92F[0m
+[0;32mI (694851) sr900_bridge: HiBean notify subscription=0[0m
+[0;33mW (694851) sr900_bridge: HiBean disconnected reason=531; no automatic machine stop[0m
+[0;32mI (694851) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (694851) NimBLE: disc_mode=2[0m
+[0;32mI (694851) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (694861) NimBLE: [0m
+
+[0;32mI (694871) sr900_bridge: Advertising ESP32-SR900-Bridge[0m
+[0;32mI (695221) sr900_bridge: STATUS seq=127 fan=9 heater=2 BT=76F ET=92F[0m
+[0;32mI (697091) sr900_bridge: STATUS seq=128 fan=9 heater=2 BT=76F ET=92F[0m
+[0;32mI (699091) sr900_bridge: STATUS seq=129 fan=9 heater=2 BT=76F ET=92F[0m
+[0;32mI (700971) sr900_bridge: STATUS seq=130 fan=9 heater=2 BT=75F ET=92F[0m
+[0;32mI (702971) sr900_bridge: STATUS seq=131 fan=9 heater=2 BT=76F ET=92F[0m
+[0;32mI (704971) sr900_bridge: STATUS seq=132 fan=9 heater=2 BT=75F ET=92F[0m
+[0;32mI (706841) sr900_bridge: STATUS seq=133 fan=9 heater=2 BT=76F ET=92F[0m
+[0;32mI (709091) sr900_bridge: STATUS seq=134 fan=9 heater=2 BT=76F ET=92F[0m
+[0;32mI (710721) sr900_bridge: STATUS seq=135 fan=9 heater=2 BT=76F ET=92F[0m
+[0;32mI (712721) sr900_bridge: STATUS seq=136 fan=9 heater=2 BT=76F ET=92F[0m
+[0;32mI (714591) sr900_bridge: STATUS seq=137 fan=9 heater=2 BT=76F ET=92F[0m
+[0;32mI (716841) sr900_bridge: STATUS seq=138 fan=9 heater=2 BT=76F ET=92F[0m
+[0;32mI (718591) sr900_bridge: STATUS seq=139 fan=9 heater=2 BT=76F ET=92F[0m
+[0;32mI (720591) sr900_bridge: STATUS seq=140 fan=9 heater=2 BT=75F ET=92F[0m
+[0;32mI (722341) sr900_bridge: STATUS seq=141 fan=9 heater=2 BT=76F ET=92F[0m
+[0;32mI (724341) sr900_bridge: STATUS seq=142 fan=9 heater=2 BT=76F ET=92F[0m
+[0;32mI (726221) sr900_bridge: STATUS seq=143 fan=9 heater=2 BT=76F ET=92F[0m
+[0;32mI (728221) sr900_bridge: STATUS seq=144 fan=9 heater=2 BT=75F ET=92F[0m
+[0;32mI (730471) sr900_bridge: STATUS seq=145 fan=9 heater=2 BT=76F ET=92F[0m
+[0;32mI (732091) sr900_bridge: STATUS seq=146 fan=9 heater=2 BT=76F ET=92F[0m
+[0;32mI (734091) sr900_bridge: STATUS seq=147 fan=9 heater=2 BT=76F ET=92F[0m
+[0;32mI (736091) sr900_bridge: STATUS seq=148 fan=9 heater=2 BT=75F ET=92F[0m
+[0;32mI (738341) sr900_bridge: STATUS seq=149 fan=9 heater=2 BT=76F ET=92F[0m
+[0;32mI (739841) sr900_bridge: STATUS seq=150 fan=9 heater=2 BT=76F ET=92F[0m
+[0;32mI (741841) sr900_bridge: STATUS seq=151 fan=9 heater=2 BT=76F ET=92F[0m
+[0;32mI (743721) sr900_bridge: STATUS seq=152 fan=9 heater=2 BT=76F ET=92F[0m
+[0;32mI (746091) sr900_bridge: STATUS seq=153 fan=9 heater=2 BT=75F ET=92F[0m
+[0;32mI (747591) sr900_bridge: STATUS seq=154 fan=9 heater=2 BT=76F ET=92F[0m
+[0;32mI (749591) sr900_bridge: STATUS seq=155 fan=9 heater=2 BT=76F ET=92F[0m
+[0;32mI (751471) sr900_bridge: STATUS seq=156 fan=9 heater=2 BT=76F ET=92F[0m
+[0;32mI (753471) sr900_bridge: STATUS seq=157 fan=9 heater=2 BT=76F ET=92F[0m
+[0;32mI (755471) sr900_bridge: STATUS seq=158 fan=9 heater=2 BT=76F ET=92F[0m
+[0;32mI (757721) sr900_bridge: STATUS seq=159 fan=9 heater=2 BT=76F ET=92F[0m
+[0;32mI (759721) sr900_bridge: STATUS seq=160 fan=9 heater=2 BT=76F ET=92F[0m
+[0;32mI (761341) sr900_bridge: STATUS seq=161 fan=9 heater=2 BT=76F ET=92F[0m
+[0;32mI (763471) sr900_bridge: STATUS seq=162 fan=9 heater=2 BT=76F ET=92F[0m
+[0;32mI (765091) sr900_bridge: STATUS seq=163 fan=9 heater=2 BT=75F ET=92F[0m
+[0;32mI (767091) sr900_bridge: STATUS seq=164 fan=9 heater=2 BT=76F ET=92F[0m
+[0;32mI (769221) sr900_bridge: STATUS seq=165 fan=9 heater=2 BT=75F ET=92F[0m
+[0;32mI (771091) sr900_bridge: STATUS seq=166 fan=9 heater=2 BT=76F ET=92F[0m
+[0;32mI (772971) sr900_bridge: STATUS seq=167 fan=9 heater=2 BT=75F ET=92F[0m
+[0;32mI (774971) sr900_bridge: STATUS seq=168 fan=9 heater=2 BT=76F ET=92F[0m
+[0;32mI (776841) sr900_bridge: STATUS seq=169 fan=9 heater=2 BT=75F ET=92F[0m
+[0;32mI (778721) sr900_bridge: STATUS seq=170 fan=9 heater=2 BT=76F ET=92F[0m
+[0;32mI (780721) sr900_bridge: STATUS seq=171 fan=9 heater=2 BT=75F ET=91F[0m
+[0;32mI (782591) sr900_bridge: STATUS seq=172 fan=9 heater=2 BT=76F ET=92F[0m
+[0;32mI (784591) sr900_bridge: STATUS seq=173 fan=9 heater=2 BT=75F ET=91F[0m
+[0;32mI (786471) sr900_bridge: STATUS seq=174 fan=9 heater=2 BT=76F ET=92F[0m
+[0;32mI (788471) sr900_bridge: STATUS seq=175 fan=9 heater=2 BT=76F ET=91F[0m
+[0;32mI (790591) sr900_bridge: STATUS seq=176 fan=9 heater=2 BT=76F ET=92F[0m
+[0;32mI (792341) sr900_bridge: STATUS seq=177 fan=9 heater=2 BT=75F ET=92F[0m
+[0;32mI (794721) sr900_bridge: STATUS seq=178 fan=9 heater=2 BT=76F ET=92F[0m
+[0;32mI (796221) sr900_bridge: STATUS seq=179 fan=9 heater=2 BT=76F ET=92F[0m
+[0;32mI (798091) sr900_bridge: STATUS seq=180 fan=9 heater=2 BT=76F ET=92F[0m
+[0;32mI (800221) sr900_bridge: STATUS seq=181 fan=9 heater=2 BT=76F ET=91F[0m
+[0;32mI (801971) sr900_bridge: STATUS seq=182 fan=9 heater=2 BT=76F ET=92F[0m
+[0;32mI (803971) sr900_bridge: STATUS seq=183 fan=9 heater=2 BT=75F ET=92F[0m
+[0;32mI (805971) sr900_bridge: STATUS seq=184 fan=9 heater=2 BT=76F ET=92F[0m
+[0;32mI (807841) sr900_bridge: STATUS seq=185 fan=9 heater=2 BT=75F ET=91F[0m
+[0;32mI (809841) sr900_bridge: STATUS seq=186 fan=9 heater=2 BT=76F ET=92F[0m
+[0;32mI (811841) sr900_bridge: STATUS seq=187 fan=9 heater=2 BT=76F ET=91F[0m
+[0;32mI (813841) sr900_bridge: STATUS seq=188 fan=9 heater=2 BT=76F ET=92F[0m
+[0;32mI (815591) sr900_bridge: STATUS seq=189 fan=9 heater=2 BT=75F ET=92F[0m
+[0;32mI (817721) sr900_bridge: STATUS seq=190 fan=9 heater=2 BT=76F ET=92F[0m
+[0;32mI (819471) sr900_bridge: STATUS seq=191 fan=9 heater=2 BT=76F ET=92F[0m
+[0;32mI (821591) sr900_bridge: STATUS seq=192 fan=9 heater=2 BT=75F ET=92F[0m
+[0;32mI (823341) sr900_bridge: STATUS seq=193 fan=9 heater=2 BT=75F ET=91F[0m
+[0;32mI (825471) sr900_bridge: STATUS seq=194 fan=9 heater=2 BT=76F ET=92F[0m
+[0;32mI (827341) sr900_bridge: STATUS seq=195 fan=9 heater=2 BT=76F ET=92F[0m
+[0;32mI (829721) sr900_bridge: STATUS seq=196 fan=9 heater=2 BT=76F ET=92F[0m
+[0;32mI (831091) sr900_bridge: STATUS seq=197 fan=9 heater=2 BT=75F ET=92F[0m
+[0;32mI (833091) sr900_bridge: STATUS seq=198 fan=9 heater=2 BT=76F ET=92F[0m
+[0;32mI (834971) sr900_bridge: STATUS seq=199 fan=9 heater=2 BT=75F ET=92F[0m
+[0;32mI (836971) sr900_bridge: STATUS seq=200 fan=9 heater=2 BT=76F ET=92F[0m
+[0;32mI (838971) sr900_bridge: STATUS seq=201 fan=9 heater=2 BT=76F ET=91F[0m
+[1;31mE (839251) NimBLE: ble_gap_adv_validate rc=6[0m
+
+[1;31mE (839251) sr900_bridge: advertise start rc=6[0m
+[0;32mI (839291) sr900_bridge: HiBean connected handle=2[0m
+[0;32mI (839961) sr900_bridge: HiBean notify subscription=1[0m
+[0;32mI (840041) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (840041) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (840041) NimBLE: att_handle=16[0m
+
+[0;32mI (840041) sr900_bridge: READ response queued: 76,91,9,2 sample_age=1073ms[0m
+[0;32mI (840841) sr900_bridge: STATUS seq=202 fan=9 heater=2 BT=76F ET=92F[0m
+[0;32mI (842131) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (842131) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (842131) NimBLE: att_handle=16[0m
+
+[0;32mI (842131) sr900_bridge: READ response queued: 76,92,9,2 sample_age=1294ms[0m
+[0;32mI (842841) sr900_bridge: STATUS seq=203 fan=9 heater=2 BT=76F ET=91F[0m
+[0;32mI (844131) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (844131) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (844131) NimBLE: att_handle=16[0m
+
+[0;32mI (844131) sr900_bridge: READ response queued: 76,91,9,2 sample_age=1292ms[0m
+[0;32mI (844721) sr900_bridge: STATUS seq=204 fan=9 heater=2 BT=75F ET=91F[0m
+[0;32mI (846841) sr900_bridge: STATUS seq=205 fan=9 heater=2 BT=76F ET=91F[0m
+[0;32mI (848841) sr900_bridge: STATUS seq=206 fan=9 heater=2 BT=76F ET=91F[0m
+[0;32mI (848961) sr900_bridge: HiBean notify subscription=0[0m
+[0;33mW (848961) sr900_bridge: HiBean disconnected reason=531; no automatic machine stop[0m
+[0;32mI (848961) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (848961) NimBLE: disc_mode=2[0m
+[0;32mI (848971) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (848981) NimBLE: [0m
+
+[0;32mI (848981) sr900_bridge: Advertising ESP32-SR900-Bridge[0m
+[0;32mI (850721) sr900_bridge: STATUS seq=207 fan=9 heater=2 BT=76F ET=92F[0m
+[0;32mI (852591) sr900_bridge: STATUS seq=208 fan=9 heater=2 BT=76F ET=91F[0m
+[1;31mE (853161) NimBLE: ble_gap_adv_validate rc=6[0m
+
+[1;31mE (853161) sr900_bridge: advertise start rc=6[0m
+[0;32mI (853181) sr900_bridge: HiBean connected handle=2[0m
+[0;32mI (853851) sr900_bridge: HiBean notify subscription=1[0m
+[0;32mI (854591) sr900_bridge: STATUS seq=209 fan=9 heater=2 BT=76F ET=91F[0m
+[0;32mI (856341) sr900_bridge: STATUS seq=210 fan=9 heater=2 BT=75F ET=91F[0m
+[0;32mI (858341) sr900_bridge: STATUS seq=211 fan=9 heater=2 BT=76F ET=92F[0m
+[0;32mI (860221) sr900_bridge: STATUS seq=212 fan=9 heater=2 BT=75F ET=91F[0m
+[0;32mI (862341) sr900_bridge: STATUS seq=213 fan=9 heater=2 BT=76F ET=92F[0m
+[0;32mI (864221) sr900_bridge: STATUS seq=214 fan=9 heater=2 BT=75F ET=91F[0m
+[0;32mI (864381) sr900_bridge: HiBean notify subscription=0[0m
+[0;33mW (864381) sr900_bridge: HiBean disconnected reason=531; no automatic machine stop[0m
+[0;32mI (864381) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (864391) NimBLE: disc_mode=2[0m
+[0;32mI (864391) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (864401) NimBLE: [0m
+
+[0;32mI (864401) sr900_bridge: Advertising ESP32-SR900-Bridge[0m
+[0;32mI (866091) sr900_bridge: STATUS seq=215 fan=9 heater=2 BT=76F ET=92F[0m
+[1;31mE (866271) NimBLE: ble_gap_adv_validate rc=6[0m
+
+[1;31mE (866271) sr900_bridge: advertise start rc=6[0m
+[0;32mI (866281) sr900_bridge: HiBean connected handle=2[0m
+[0;32mI (866921) sr900_bridge: HiBean notify subscription=1[0m
+[0;32mI (866981) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (866981) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (866981) NimBLE: att_handle=16[0m
+
+[0;32mI (866981) sr900_bridge: READ response queued: 76,92,9,2 sample_age=891ms[0m
+[0;32mI (868341) sr900_bridge: STATUS seq=216 fan=9 heater=2 BT=75F ET=91F[0m
+[0;32mI (868881) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (868881) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (868881) NimBLE: att_handle=16[0m
+
+[0;32mI (868881) sr900_bridge: READ response queued: 75,91,9,2 sample_age=542ms[0m
+[0;32mI (868981) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (868981) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (868981) NimBLE: att_handle=16[0m
+
+[0;32mI (868981) sr900_bridge: READ response queued: 75,91,9,2 sample_age=640ms[0m
+[0;32mI (869081) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (869081) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (869081) NimBLE: att_handle=16[0m
+
+[0;32mI (869081) sr900_bridge: READ response queued: 75,91,9,2 sample_age=737ms[0m
+[0;32mI (869971) sr900_bridge: STATUS seq=217 fan=9 heater=2 BT=76F ET=92F[0m
+[0;32mI (872091) sr900_bridge: STATUS seq=218 fan=9 heater=2 BT=75F ET=91F[0m
+[0;32mI (873841) sr900_bridge: STATUS seq=219 fan=9 heater=2 BT=76F ET=91F[0m
+[0;32mI (875841) sr900_bridge: STATUS seq=220 fan=9 heater=2 BT=76F ET=91F[0m
+[0;32mI (876241) sr900_bridge: HiBean notify subscription=0[0m
+[0;33mW (876241) sr900_bridge: HiBean disconnected reason=531; no automatic machine stop[0m
+[0;32mI (876251) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (876251) NimBLE: disc_mode=2[0m
+[0;32mI (876251) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (876261) NimBLE: [0m
+
+[0;32mI (876261) sr900_bridge: Advertising ESP32-SR900-Bridge[0m
+[0;32mI (877721) sr900_bridge: STATUS seq=221 fan=9 heater=2 BT=76F ET=91F[0m
+[0;32mI (879721) sr900_bridge: STATUS seq=222 fan=9 heater=2 BT=76F ET=91F[0m
+[0;32mI (881841) sr900_bridge: STATUS seq=223 fan=9 heater=2 BT=76F ET=91F[0m
+[0;32mI (883591) sr900_bridge: STATUS seq=224 fan=9 heater=2 BT=76F ET=91F[0m
+[0;32mI (885471) sr900_bridge: STATUS seq=225 fan=9 heater=2 BT=75F ET=91F[0m
+[0;32mI (887721) sr900_bridge: STATUS seq=226 fan=9 heater=2 BT=76F ET=92F[0m
+[0;32mI (889471) sr900_bridge: STATUS seq=227 fan=9 heater=2 BT=76F ET=91F[0m
+[0;32mI (891341) sr900_bridge: STATUS seq=228 fan=9 heater=2 BT=76F ET=91F[0m
+[0;32mI (893341) sr900_bridge: STATUS seq=229 fan=9 heater=2 BT=76F ET=91F[0m
+[0;32mI (895221) sr900_bridge: STATUS seq=230 fan=9 heater=2 BT=76F ET=91F[0m
+[0;32mI (897221) sr900_bridge: STATUS seq=231 fan=9 heater=2 BT=75F ET=91F[0m
+[0;32mI (899091) sr900_bridge: STATUS seq=232 fan=9 heater=2 BT=76F ET=91F[0m
+[0;32mI (901091) sr900_bridge: STATUS seq=233 fan=9 heater=2 BT=76F ET=91F[0m
+[0;32mI (902971) sr900_bridge: STATUS seq=234 fan=9 heater=2 BT=76F ET=91F[0m
+[0;32mI (905091) sr900_bridge: STATUS seq=235 fan=9 heater=2 BT=75F ET=91F[0m
+[0;32mI (906841) sr900_bridge: STATUS seq=236 fan=9 heater=2 BT=76F ET=92F[0m
+[0;32mI (908841) sr900_bridge: STATUS seq=237 fan=9 heater=2 BT=75F ET=91F[0m
+[0;32mI (910721) sr900_bridge: STATUS seq=238 fan=9 heater=2 BT=76F ET=91F[0m
+[1;31mE (911791) NimBLE: ble_gap_adv_validate rc=6[0m
+
+[1;31mE (911791) sr900_bridge: advertise start rc=6[0m
+[0;32mI (911821) sr900_bridge: HiBean connected handle=2[0m
+[0;32mI (912521) sr900_bridge: HiBean notify subscription=1[0m
+[0;32mI (912721) sr900_bridge: STATUS seq=239 fan=9 heater=2 BT=75F ET=91F[0m
+[0;32mI (914591) sr900_bridge: STATUS seq=240 fan=9 heater=2 BT=76F ET=91F[0m
+[0;32mI (916721) sr900_bridge: STATUS seq=241 fan=9 heater=2 BT=75F ET=91F[0m
+[0;32mI (918531) sr900_bridge: HiBean notify subscription=0[0m
+[0;33mW (918531) sr900_bridge: HiBean disconnected reason=531; no automatic machine stop[0m
+[0;32mI (918531) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (918531) NimBLE: disc_mode=2[0m
+[0;32mI (918531) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (918541) NimBLE: [0m
+
+[0;32mI (918551) sr900_bridge: Advertising ESP32-SR900-Bridge[0m
+[0;32mI (918841) sr900_bridge: STATUS seq=242 fan=9 heater=2 BT=76F ET=91F[0m
+[0;32mI (920471) sr900_bridge: STATUS seq=243 fan=9 heater=2 BT=75F ET=91F[0m
+[0;32mI (922471) sr900_bridge: STATUS seq=244 fan=9 heater=2 BT=76F ET=91F[0m
+[0;32mI (924341) sr900_bridge: STATUS seq=245 fan=9 heater=2 BT=75F ET=91F[0m
+[0;32mI (926471) sr900_bridge: STATUS seq=246 fan=9 heater=2 BT=76F ET=91F[0m
+[0;32mI (928221) sr900_bridge: STATUS seq=247 fan=9 heater=2 BT=76F ET=91F[0m
+[0;32mI (930591) sr900_bridge: STATUS seq=248 fan=9 heater=2 BT=76F ET=91F[0m
+[0;32mI (932341) sr900_bridge: STATUS seq=249 fan=9 heater=2 BT=75F ET=91F[0m
+[0;32mI (934091) sr900_bridge: STATUS seq=250 fan=9 heater=2 BT=76F ET=91F[0m
+[0;32mI (936091) sr900_bridge: STATUS seq=251 fan=9 heater=2 BT=76F ET=91F[0m
+[0;32mI (937971) sr900_bridge: STATUS seq=252 fan=9 heater=2 BT=75F ET=91F[0m
+[0;32mI (939841) sr900_bridge: STATUS seq=253 fan=9 heater=2 BT=76F ET=91F[0m
+[0;32mI (941841) sr900_bridge: STATUS seq=254 fan=9 heater=2 BT=75F ET=91F[0m
+[0;32mI (943971) sr900_bridge: STATUS seq=255 fan=9 heater=2 BT=76F ET=91F[0m
+[0;32mI (945721) sr900_bridge: STATUS seq=256 fan=9 heater=2 BT=75F ET=91F[0m
+[0;32mI (947721) sr900_bridge: STATUS seq=257 fan=9 heater=2 BT=76F ET=91F[0m
+[0;32mI (949591) sr900_bridge: STATUS seq=258 fan=9 heater=2 BT=76F ET=91F[0m
+[0;32mI (951721) sr900_bridge: STATUS seq=259 fan=9 heater=2 BT=76F ET=91F[0m
+[0;32mI (953471) sr900_bridge: STATUS seq=260 fan=9 heater=2 BT=76F ET=91F[0m
+[0;32mI (955841) sr900_bridge: STATUS seq=261 fan=9 heater=2 BT=75F ET=91F[0m
+[0;32mI (957341) sr900_bridge: STATUS seq=262 fan=9 heater=2 BT=76F ET=91F[0m
+[0;32mI (959341) sr900_bridge: STATUS seq=263 fan=9 heater=2 BT=75F ET=91F[0m
+[0;32mI (961221) sr900_bridge: STATUS seq=264 fan=9 heater=2 BT=76F ET=91F[0m
+[0;32mI (963341) sr900_bridge: STATUS seq=265 fan=9 heater=2 BT=76F ET=91F[0m
+[0;32mI (965091) sr900_bridge: STATUS seq=266 fan=9 heater=2 BT=76F ET=91F[0m
+[0;32mI (967091) sr900_bridge: STATUS seq=267 fan=9 heater=2 BT=76F ET=91F[0m
+[0;32mI (969091) sr900_bridge: STATUS seq=268 fan=9 heater=2 BT=75F ET=91F[0m
+[0;32mI (971471) sr900_bridge: STATUS seq=269 fan=9 heater=2 BT=76F ET=91F[0m
+[0;32mI (973221) sr900_bridge: STATUS seq=270 fan=9 heater=2 BT=76F ET=91F[0m
+[0;32mI (974971) sr900_bridge: STATUS seq=271 fan=9 heater=2 BT=76F ET=91F[0m
+[0;32mI (976971) sr900_bridge: STATUS seq=272 fan=9 heater=2 BT=75F ET=91F[0m
+[0;32mI (978721) sr900_bridge: STATUS seq=273 fan=9 heater=2 BT=76F ET=91F[0m
+[0;32mI (980841) sr900_bridge: STATUS seq=274 fan=9 heater=2 BT=75F ET=91F[0m
+[0;32mI (982591) sr900_bridge: STATUS seq=275 fan=9 heater=2 BT=76F ET=91F[0m
+[0;32mI (984591) sr900_bridge: STATUS seq=276 fan=9 heater=2 BT=76F ET=91F[0m
+[0;32mI (986471) sr900_bridge: STATUS seq=277 fan=9 heater=2 BT=76F ET=91F[0m
+[0;32mI (988471) sr900_bridge: STATUS seq=278 fan=9 heater=2 BT=76F ET=91F[0m
+[0;32mI (990341) sr900_bridge: STATUS seq=279 fan=9 heater=2 BT=76F ET=91F[0m
+[0;32mI (992471) sr900_bridge: STATUS seq=280 fan=9 heater=2 BT=76F ET=91F[0m
+[0;32mI (994221) sr900_bridge: STATUS seq=281 fan=9 heater=2 BT=76F ET=91F[0m
+[0;32mI (996221) sr900_bridge: STATUS seq=282 fan=9 heater=2 BT=76F ET=91F[0m
+[0;32mI (998341) sr900_bridge: STATUS seq=283 fan=9 heater=2 BT=76F ET=91F[0m
+[0;32mI (998411) sr900_bridge: HiBean connected handle=2[0m
+[0;32mI (999091) sr900_bridge: HiBean notify subscription=1[0m
+[0;32mI (999171) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (999171) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (999171) NimBLE: att_handle=16[0m
+
+[0;32mI (999181) sr900_bridge: READ response queued: 76,91,9,2 sample_age=834ms[0m
+[0;32mI (1000091) sr900_bridge: STATUS seq=284 fan=9 heater=2 BT=76F ET=91F[0m
+[0;32mI (1001271) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (1001271) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (1001271) NimBLE: att_handle=16[0m
+
+[0;32mI (1001271) sr900_bridge: READ response queued: 76,91,9,2 sample_age=1180ms[0m
+[0;32mI (1002221) sr900_bridge: STATUS seq=285 fan=9 heater=2 BT=75F ET=91F[0m
+[0;32mI (1003971) sr900_bridge: STATUS seq=286 fan=9 heater=2 BT=76F ET=91F[0m
+[0;32mI (1006341) sr900_bridge: STATUS seq=287 fan=9 heater=2 BT=75F ET=90F[0m
+[0;32mI (1008221) sr900_bridge: STATUS seq=288 fan=9 heater=2 BT=76F ET=91F[0m
+[0;32mI (1009801) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (1009801) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (1009801) NimBLE: att_handle=16[0m
+
+[0;32mI (1009801) sr900_bridge: READ response queued: 76,91,9,2 sample_age=1586ms[0m
+[0;32mI (1010091) sr900_bridge: STATUS seq=289 fan=9 heater=2 BT=75F ET=91F[0m
+[0;32mI (1011721) sr900_bridge: STATUS seq=290 fan=9 heater=2 BT=76F ET=91F[0m
+[0;32mI (1012041) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (1012041) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (1012041) NimBLE: att_handle=16[0m
+
+[0;32mI (1012041) sr900_bridge: READ response queued: 76,91,9,2 sample_age=329ms[0m
+[0;32mI (1012141) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (1012141) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (1012141) NimBLE: att_handle=16[0m
+
+[0;32mI (1012141) sr900_bridge: READ response queued: 76,91,9,2 sample_age=426ms[0m
+[0;32mI (1012241) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (1012241) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (1012241) NimBLE: att_handle=16[0m
+
+[0;32mI (1012241) sr900_bridge: READ response queued: 76,91,9,2 sample_age=524ms[0m
+[0;32mI (1013721) sr900_bridge: STATUS seq=291 fan=9 heater=2 BT=76F ET=91F[0m
+[0;32mI (1015591) sr900_bridge: STATUS seq=292 fan=9 heater=2 BT=76F ET=91F[0m
+[0;32mI (1017591) sr900_bridge: STATUS seq=293 fan=9 heater=2 BT=76F ET=91F[0m
+[0;32mI (1019471) sr900_bridge: STATUS seq=294 fan=9 heater=2 BT=75F ET=91F[0m
+[0;32mI (1021471) sr900_bridge: STATUS seq=295 fan=9 heater=2 BT=76F ET=91F[0m
+[0;32mI (1023341) sr900_bridge: STATUS seq=296 fan=9 heater=2 BT=75F ET=91F[0m
+[0;32mI (1025471) sr900_bridge: STATUS seq=297 fan=9 heater=2 BT=76F ET=91F[0m
+[0;32mI (1026331) sr900_bridge: HiBean notify subscription=0[0m
+[0;33mW (1026331) sr900_bridge: HiBean disconnected reason=531; no automatic machine stop[0m
+[0;32mI (1026331) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (1026331) NimBLE: disc_mode=2[0m
+[0;32mI (1026341) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (1026351) NimBLE: [0m
+
+[0;32mI (1026351) sr900_bridge: Advertising ESP32-SR900-Bridge[0m
+[0;32mI (1027471) sr900_bridge: STATUS seq=298 fan=9 heater=2 BT=76F ET=91F[0m
+[0;32mI (1029221) sr900_bridge: STATUS seq=299 fan=9 heater=2 BT=76F ET=91F[0m
+[0;32mI (1031221) sr900_bridge: STATUS seq=300 fan=9 heater=2 BT=76F ET=90F[0m
+[0;32mI (1033091) sr900_bridge: STATUS seq=301 fan=9 heater=2 BT=76F ET=91F[0m
+[0;32mI (1035091) sr900_bridge: STATUS seq=302 fan=9 heater=2 BT=76F ET=91F[0m
+[0;32mI (1036971) sr900_bridge: STATUS seq=303 fan=9 heater=2 BT=75F ET=90F[0m
+[0;32mI (1038971) sr900_bridge: STATUS seq=304 fan=9 heater=2 BT=76F ET=91F[0m
+[0;32mI (1040841) sr900_bridge: STATUS seq=305 fan=9 heater=2 BT=75F ET=90F[0m
+[0;32mI (1042971) sr900_bridge: STATUS seq=306 fan=9 heater=2 BT=76F ET=91F[0m
+[0;32mI (1044971) sr900_bridge: STATUS seq=307 fan=9 heater=2 BT=76F ET=91F[0m
+[0;32mI (1046721) sr900_bridge: STATUS seq=308 fan=9 heater=2 BT=76F ET=91F[0m
+[0;32mI (1048591) sr900_bridge: STATUS seq=309 fan=9 heater=2 BT=76F ET=91F[0m
+[0;32mI (1050721) sr900_bridge: STATUS seq=310 fan=9 heater=2 BT=75F ET=91F[0m
+[0;32mI (1051811) sr900_bridge: HiBean connected handle=2[0m
+[0;32mI (1052581) sr900_bridge: HiBean notify subscription=1[0m
+[0;32mI (1052591) sr900_bridge: STATUS seq=311 fan=9 heater=2 BT=76F ET=91F[0m
+[0;32mI (1052621) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (1052621) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (1052621) NimBLE: att_handle=16[0m
+
+[0;32mI (1052621) sr900_bridge: READ response queued: 76,91,9,2 sample_age=30ms[0m
+[0;32mI (1052771) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (1052771) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (1052771) NimBLE: att_handle=16[0m
+
+[0;32mI (1052771) sr900_bridge: READ response queued: 76,91,9,2 sample_age=176ms[0m
+[0;32mI (1052861) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (1052861) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (1052861) NimBLE: att_handle=16[0m
+
+[0;32mI (1052861) sr900_bridge: READ response queued: 76,91,9,2 sample_age=274ms[0m
+[0;32mI (1054471) sr900_bridge: STATUS seq=312 fan=9 heater=2 BT=75F ET=90F[0m
+[0;32mI (1056471) sr900_bridge: STATUS seq=313 fan=9 heater=2 BT=76F ET=91F[0m
+[0;32mI (1058471) sr900_bridge: STATUS seq=314 fan=9 heater=2 BT=75F ET=90F[0m
+[0;32mI (1060341) sr900_bridge: STATUS seq=315 fan=9 heater=2 BT=76F ET=91F[0m
+[0;32mI (1062341) sr900_bridge: STATUS seq=316 fan=9 heater=2 BT=75F ET=90F[0m
+[0;32mI (1064221) sr900_bridge: STATUS seq=317 fan=9 heater=2 BT=76F ET=91F[0m
+[0;32mI (1066091) sr900_bridge: STATUS seq=318 fan=9 heater=2 BT=76F ET=91F[0m
+[0;32mI (1068221) sr900_bridge: STATUS seq=319 fan=9 heater=2 BT=75F ET=91F[0m
+[0;32mI (1069971) sr900_bridge: STATUS seq=320 fan=9 heater=2 BT=76F ET=91F[0m
+[0;32mI (1071971) sr900_bridge: STATUS seq=321 fan=9 heater=2 BT=76F ET=91F[0m
+[0;32mI (1073841) sr900_bridge: STATUS seq=322 fan=9 heater=2 BT=75F ET=91F[0m
+[0;32mI (1075841) sr900_bridge: STATUS seq=323 fan=9 heater=2 BT=75F ET=90F[0m
+[0;32mI (1077841) sr900_bridge: STATUS seq=324 fan=9 heater=2 BT=76F ET=90F[0m
+[0;32mI (1079721) sr900_bridge: STATUS seq=325 fan=9 heater=2 BT=75F ET=90F[0m
+[0;32mI (1081721) sr900_bridge: STATUS seq=326 fan=9 heater=2 BT=76F ET=91F[0m
+[0;32mI (1083591) sr900_bridge: STATUS seq=327 fan=9 heater=2 BT=75F ET=90F[0m
+[0;32mI (1085591) sr900_bridge: STATUS seq=328 fan=9 heater=2 BT=76F ET=91F[0m
+[0;32mI (1087471) sr900_bridge: STATUS seq=329 fan=9 heater=2 BT=76F ET=90F[0m
+[0;32mI (1089721) sr900_bridge: STATUS seq=330 fan=9 heater=2 BT=76F ET=91F[0m
+[0;32mI (1091341) sr900_bridge: STATUS seq=331 fan=9 heater=2 BT=75F ET=90F[0m
+[0;32mI (1093341) sr900_bridge: STATUS seq=332 fan=9 heater=2 BT=76F ET=91F[0m
+[0;32mI (1095221) sr900_bridge: STATUS seq=333 fan=9 heater=2 BT=75F ET=90F[0m
+[0;32mI (1097471) sr900_bridge: STATUS seq=334 fan=9 heater=2 BT=75F ET=90F[0m
+[0;32mI (1099221) sr900_bridge: STATUS seq=335 fan=9 heater=2 BT=76F ET=90F[0m
+[0;32mI (1101091) sr900_bridge: STATUS seq=336 fan=9 heater=2 BT=76F ET=90F[0m
+[0;32mI (1102971) sr900_bridge: STATUS seq=337 fan=9 heater=2 BT=76F ET=90F[0m
+[0;32mI (1105721) sr900_bridge: STATUS seq=338 fan=9 heater=2 BT=75F ET=90F[0m
+[0;32mI (1107091) sr900_bridge: STATUS seq=339 fan=9 heater=2 BT=76F ET=91F[0m
+[0;32mI (1108971) sr900_bridge: STATUS seq=340 fan=9 heater=2 BT=75F ET=90F[0m
+[0;32mI (1109561) sr900_bridge: HiBean notify subscription=0[0m
+[0;33mW (1109561) sr900_bridge: HiBean disconnected reason=531; no automatic machine stop[0m
+[0;32mI (1109561) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (1109561) NimBLE: disc_mode=2[0m
+[0;32mI (1109571) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (1109581) NimBLE: [0m
+
+[0;32mI (1109581) sr900_bridge: Advertising ESP32-SR900-Bridge[0m
+[0;32mI (1110841) sr900_bridge: STATUS seq=341 fan=9 heater=2 BT=76F ET=91F[0m
+[0;32mI (1112721) sr900_bridge: STATUS seq=342 fan=9 heater=2 BT=75F ET=90F[0m
+[0;32mI (1115091) sr900_bridge: STATUS seq=343 fan=9 heater=2 BT=76F ET=90F[0m
+[0;32mI (1116721) sr900_bridge: STATUS seq=344 fan=9 heater=2 BT=75F ET=90F[0m
+[0;32mI (1118591) sr900_bridge: STATUS seq=345 fan=9 heater=2 BT=76F ET=90F[0m
+[0;32mI (1120471) sr900_bridge: STATUS seq=346 fan=9 heater=2 BT=76F ET=90F[0m
+[0;32mI (1122591) sr900_bridge: STATUS seq=347 fan=9 heater=2 BT=76F ET=90F[0m
+[0;32mI (1124341) sr900_bridge: STATUS seq=348 fan=9 heater=2 BT=75F ET=90F[0m
+[0;32mI (1126341) sr900_bridge: STATUS seq=349 fan=9 heater=2 BT=76F ET=90F[0m
+[0;32mI (1126481) sr900_bridge: HiBean connected handle=2[0m
+[0;32mI (1127261) sr900_bridge: HiBean notify subscription=1[0m
+[0;32mI (1127321) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (1127321) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (1127321) NimBLE: att_handle=16[0m
+
+[0;32mI (1127321) sr900_bridge: READ response queued: 76,90,9,2 sample_age=981ms[0m
+[0;32mI (1127521) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (1127521) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (1127521) NimBLE: att_handle=16[0m
+
+[0;32mI (1127521) sr900_bridge: READ response queued: 76,90,9,2 sample_age=1176ms[0m
+[0;32mI (1127611) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (1127611) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (1127611) NimBLE: att_handle=16[0m
+
+[0;32mI (1127611) sr900_bridge: READ response queued: 76,90,9,2 sample_age=1273ms[0m
+[0;32mI (1128221) sr900_bridge: STATUS seq=350 fan=9 heater=2 BT=76F ET=90F[0m
+[0;32mI (1130341) sr900_bridge: STATUS seq=351 fan=9 heater=2 BT=76F ET=90F[0m
+[0;32mI (1132221) sr900_bridge: STATUS seq=352 fan=9 heater=2 BT=76F ET=90F[0m
+[0;32mI (1134341) sr900_bridge: STATUS seq=353 fan=9 heater=2 BT=75F ET=90F[0m
+[0;32mI (1136091) sr900_bridge: STATUS seq=354 fan=9 heater=2 BT=76F ET=90F[0m
+[0;32mI (1138341) sr900_bridge: STATUS seq=355 fan=9 heater=2 BT=75F ET=90F[0m
+[0;32mI (1139971) sr900_bridge: STATUS seq=356 fan=9 heater=2 BT=76F ET=91F[0m
+[0;32mI (1141971) sr900_bridge: STATUS seq=357 fan=9 heater=2 BT=75F ET=90F[0m
+[0;32mI (1143841) sr900_bridge: STATUS seq=358 fan=9 heater=2 BT=76F ET=91F[0m
+[0;32mI (1145721) sr900_bridge: STATUS seq=359 fan=9 heater=2 BT=75F ET=90F[0m
+[0;32mI (1147721) sr900_bridge: STATUS seq=360 fan=9 heater=2 BT=76F ET=90F[0m
+[0;32mI (1149591) sr900_bridge: STATUS seq=361 fan=9 heater=2 BT=75F ET=90F[0m
+[0;32mI (1150571) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (1150571) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (1150571) NimBLE: att_handle=16[0m
+
+[0;32mI (1150571) sr900_bridge: READ response queued: 75,90,9,2 sample_age=984ms[0m
+[0;32mI (1150721) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (1150721) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (1150721) NimBLE: att_handle=16[0m
+
+[0;32mI (1150721) sr900_bridge: READ response queued: 75,90,9,2 sample_age=1130ms[0m
+[0;32mI (1150821) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (1150821) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (1150821) NimBLE: att_handle=16[0m
+
+[0;32mI (1150821) sr900_bridge: READ response queued: 75,90,9,2 sample_age=1228ms[0m
+[0;32mI (1151591) sr900_bridge: STATUS seq=362 fan=9 heater=2 BT=75F ET=90F[0m
+[0;32mI (1153471) sr900_bridge: STATUS seq=363 fan=9 heater=2 BT=76F ET=90F[0m
+[0;32mI (1155591) sr900_bridge: STATUS seq=364 fan=9 heater=2 BT=75F ET=90F[0m
+[0;32mI (1157341) sr900_bridge: STATUS seq=365 fan=9 heater=2 BT=76F ET=91F[0m
+[0;32mI (1159151) sr900_bridge: HiBean notify subscription=0[0m
+[0;33mW (1159151) sr900_bridge: HiBean disconnected reason=531; no automatic machine stop[0m
+[0;32mI (1159161) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (1159161) NimBLE: disc_mode=2[0m
+[0;32mI (1159161) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (1159171) NimBLE: [0m
+
+[0;32mI (1159171) sr900_bridge: Advertising ESP32-SR900-Bridge[0m
+[0;32mI (1159471) sr900_bridge: STATUS seq=366 fan=9 heater=2 BT=75F ET=90F[0m
+[0;32mI (1161721) sr900_bridge: STATUS seq=367 fan=9 heater=2 BT=76F ET=91F[0m
+[0;32mI (1163221) sr900_bridge: STATUS seq=368 fan=9 heater=2 BT=75F ET=90F[0m
+[0;32mI (1165341) sr900_bridge: STATUS seq=369 fan=9 heater=2 BT=76F ET=91F[0m
+[0;32mI (1167091) sr900_bridge: STATUS seq=370 fan=9 heater=2 BT=76F ET=90F[0m
+[0;32mI (1169341) sr900_bridge: STATUS seq=371 fan=9 heater=2 BT=76F ET=90F[0m
+[0;32mI (1170971) sr900_bridge: STATUS seq=372 fan=9 heater=2 BT=75F ET=90F[0m
+[0;32mI (1172971) sr900_bridge: STATUS seq=373 fan=9 heater=2 BT=76F ET=90F[0m
+[0;32mI (1174971) sr900_bridge: STATUS seq=374 fan=9 heater=2 BT=75F ET=90F[0m
+[1;31mE (1176841) NimBLE: ble_gap_adv_validate rc=6[0m
+
+[1;31mE (1176841) sr900_bridge: advertise start rc=6[0m
+[0;32mI (1176861) sr900_bridge: HiBean connected handle=2[0m
+[0;32mI (1176971) sr900_bridge: STATUS seq=375 fan=9 heater=2 BT=76F ET=90F[0m
+[0;32mI (1177551) sr900_bridge: HiBean notify subscription=1[0m
+[0;32mI (1177601) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (1177601) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (1177601) NimBLE: att_handle=16[0m
+
+[0;32mI (1177601) sr900_bridge: READ response queued: 76,90,9,2 sample_age=633ms[0m
+[0;32mI (1177691) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (1177701) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (1177701) NimBLE: att_handle=16[0m
+
+[0;32mI (1177701) sr900_bridge: READ response queued: 76,90,9,2 sample_age=731ms[0m
+[0;32mI (1177791) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (1177791) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (1177791) NimBLE: att_handle=16[0m
+
+[0;32mI (1177791) sr900_bridge: READ response queued: 76,90,9,2 sample_age=828ms[0m
+[0;32mI (1177891) sr900_bridge: HiBean command: HEAT;1[0m
+
+[0;32mI (1177891) sr900_bridge: CONTROL admitted type=1 value=1 id=1[0m
+[0;32mI (1177891) sr900_bridge: TX acknowledged write type=1 id=1 len=34 MTU=64[0m
+[0;32mI (1177901) NimBLE: GATT procedure initiated: write; [0m
+[0;32mI (1177901) NimBLE: att_handle=30 len=34[0m
+
+[0;32mI (1177991) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (1177991) sr900_bridge: READ deferred for control id=1[0m
+[0;32mI (1178841) sr900_bridge: TX complete type=1 id=1 ATT status=0[0m
+[0;32mI (1178841) sr900_bridge: STATUS seq=376 fan=9 heater=1 BT=75F ET=90F[0m
+[0;32mI (1178841) sr900_bridge: CONTROL confirmed id=1 elapsed=952ms fan=9 heater=1[0m
+[0;32mI (1178851) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (1178851) NimBLE: att_handle=16[0m
+
+[0;32mI (1178861) sr900_bridge: READ response queued: 75,90,9,1 sample_age=15ms[0m
+[0;32mI (1178911) sr900_bridge: HiBean command: HEAT;0[0m
+
+[0;32mI (1178911) sr900_bridge: CONTROL admitted type=1 value=0 id=2[0m
+[0;32mI (1178911) sr900_bridge: TX acknowledged write type=1 id=2 len=34 MTU=64[0m
+[0;32mI (1178921) NimBLE: GATT procedure initiated: write; [0m
+[0;32mI (1178921) NimBLE: att_handle=30 len=34[0m
+
+[0;32mI (1179011) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (1179011) sr900_bridge: READ deferred for control id=2[0m
+[0;32mI (1179091) sr900_bridge: TX complete type=1 id=2 ATT status=0[0m
+[0;32mI (1180721) sr900_bridge: STATUS seq=377 fan=9 heater=2 BT=76F ET=90F[0m
+[0;32mI (1180721) sr900_bridge: WAIT feedback id=2 wanted=0 fan=9 heater=2[0m
+[0;32mI (1182841) sr900_bridge: STATUS seq=378 fan=9 heater=2 BT=75F ET=90F[0m
+[0;32mI (1182841) sr900_bridge: WAIT feedback id=2 wanted=0 fan=9 heater=2[0m
+[1;31mE (1183971) sr900_bridge: CONTROL timeout id=2 wanted=0 fan=9 heater=2[0m
+[1;31mE (1183971) sr900_bridge: HiBean session failed: control feedback timeout; machine state is not guaranteed[0m
+[0;32mI (1183971) NimBLE: GAP procedure initiated: terminate connection; conn_handle=2 hci_reason=19[0m
+
+[0;32mI (1183981) sr900_bridge: HiBean notify subscription=0[0m
+[0;33mW (1183981) sr900_bridge: HiBean disconnected reason=534; no automatic machine stop[0m
+[0;32mI (1183991) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (1184001) NimBLE: disc_mode=2[0m
+[0;32mI (1184001) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (1184011) NimBLE: [0m
+
+[0;32mI (1184011) sr900_bridge: Advertising ESP32-SR900-Bridge[0m
+[0;32mI (1184591) sr900_bridge: STATUS seq=379 fan=9 heater=2 BT=76F ET=90F[0m
+[0;32mI (1186971) sr900_bridge: STATUS seq=380 fan=9 heater=2 BT=76F ET=90F[0m
+[0;32mI (1188471) sr900_bridge: STATUS seq=381 fan=9 heater=2 BT=76F ET=90F[0m
+[1;31mE (1189981) NimBLE: ble_gap_adv_validate rc=6[0m
+
+[1;31mE (1189981) sr900_bridge: advertise start rc=6[0m
+[0;32mI (1190001) sr900_bridge: HiBean connected handle=2[0m
+[0;32mI (1190671) sr900_bridge: HiBean notify subscription=1[0m
+[0;32mI (1190731) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (1190731) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (1190731) NimBLE: att_handle=16[0m
+
+[0;32mI (1190731) sr900_bridge: READ response queued: 76,90,9,2 sample_age=2264ms[0m
+[0;32mI (1190821) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (1190831) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (1190831) NimBLE: att_handle=16[0m
+
+[0;32mI (1190831) sr900_bridge: READ response queued: 76,90,9,2 sample_age=2361ms[0m
+[0;32mI (1190841) sr900_bridge: STATUS seq=382 fan=9 heater=2 BT=76F ET=90F[0m
+[0;32mI (1190921) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (1190921) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (1190921) NimBLE: att_handle=16[0m
+
+[0;32mI (1190921) sr900_bridge: READ response queued: 76,90,9,2 sample_age=83ms[0m
+[0;32mI (1191021) sr900_bridge: HiBean command: HEAT;1[0m
+
+[0;32mI (1191021) sr900_bridge: CONTROL admitted type=1 value=1 id=3[0m
+[0;32mI (1191021) sr900_bridge: TX acknowledged write type=1 id=3 len=34 MTU=64[0m
+[0;32mI (1191031) NimBLE: GATT procedure initiated: write; [0m
+[0;32mI (1191031) NimBLE: att_handle=30 len=34[0m
+
+[0;32mI (1191121) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (1191121) sr900_bridge: READ deferred for control id=3[0m
+[0;32mI (1191221) sr900_bridge: TX complete type=1 id=3 ATT status=0[0m
+[0;32mI (1192471) sr900_bridge: STATUS seq=383 fan=9 heater=1 BT=75F ET=90F[0m
+[0;32mI (1192471) sr900_bridge: CONTROL confirmed id=3 elapsed=1446ms fan=9 heater=1[0m
+[0;32mI (1192471) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (1192471) NimBLE: att_handle=16[0m
+
+[0;32mI (1192481) sr900_bridge: READ response queued: 75,90,9,1 sample_age=11ms[0m
+[0;32mI (1192531) sr900_bridge: HiBean command: HEAT;0[0m
+
+[0;32mI (1192531) sr900_bridge: CONTROL admitted type=1 value=0 id=4[0m
+[0;32mI (1192531) sr900_bridge: TX acknowledged write type=1 id=4 len=34 MTU=64[0m
+[0;32mI (1192541) NimBLE: GATT procedure initiated: write; [0m
+[0;32mI (1192541) NimBLE: att_handle=30 len=34[0m
+
+[0;32mI (1192631) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (1192631) sr900_bridge: READ deferred for control id=4[0m
+[0;32mI (1192721) sr900_bridge: TX complete type=1 id=4 ATT status=0[0m
+[0;32mI (1194341) sr900_bridge: STATUS seq=384 fan=9 heater=0 BT=76F ET=90F[0m
+[0;32mI (1194341) sr900_bridge: CONTROL confirmed id=4 elapsed=1810ms fan=9 heater=0[0m
+[0;32mI (1194341) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (1194351) NimBLE: att_handle=16[0m
+
+[0;32mI (1194351) sr900_bridge: READ response queued: 76,90,9,0 sample_age=11ms[0m
+[0;32mI (1196591) sr900_bridge: STATUS seq=385 fan=9 heater=0 BT=76F ET=90F[0m
+[0;32mI (1198341) sr900_bridge: STATUS seq=386 fan=9 heater=0 BT=76F ET=90F[0m
+[0;32mI (1200221) sr900_bridge: STATUS seq=387 fan=9 heater=2 BT=76F ET=90F[0m
+[0;32mI (1202221) sr900_bridge: STATUS seq=388 fan=9 heater=2 BT=76F ET=90F[0m
+[0;32mI (1202771) sr900_bridge: HiBean notify subscription=0[0m
+[0;33mW (1202771) sr900_bridge: HiBean disconnected reason=531; no automatic machine stop[0m
+[0;32mI (1202771) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (1202781) NimBLE: disc_mode=2[0m
+[0;32mI (1202781) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (1202791) NimBLE: [0m
+
+[0;32mI (1202791) sr900_bridge: Advertising ESP32-SR900-Bridge[0m
+[0;32mI (1204091) sr900_bridge: STATUS seq=389 fan=9 heater=2 BT=75F ET=90F[0m
+[0;32mI (1205971) sr900_bridge: STATUS seq=390 fan=9 heater=2 BT=76F ET=90F[0m
+[0;32mI (1207841) sr900_bridge: STATUS seq=391 fan=9 heater=2 BT=75F ET=90F[0m
+[0;32mI (1209841) sr900_bridge: STATUS seq=392 fan=9 heater=2 BT=76F ET=90F[0m
+[0;32mI (1211721) sr900_bridge: STATUS seq=393 fan=9 heater=2 BT=75F ET=90F[0m
+[0;32mI (1213841) sr900_bridge: STATUS seq=394 fan=9 heater=2 BT=76F ET=90F[0m
+[0;32mI (1215841) sr900_bridge: STATUS seq=395 fan=9 heater=2 BT=75F ET=90F[0m
+[0;32mI (1217591) sr900_bridge: STATUS seq=396 fan=9 heater=2 BT=76F ET=90F[0m
+[0;32mI (1219971) sr900_bridge: STATUS seq=397 fan=9 heater=2 BT=75F ET=90F[0m
+[0;32mI (1221661) sr900_bridge: HiBean connected handle=2[0m
+[0;32mI (1221721) sr900_bridge: STATUS seq=398 fan=9 heater=2 BT=76F ET=90F[0m
+[0;32mI (1222381) sr900_bridge: HiBean notify subscription=1[0m
+[0;32mI (1222481) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (1222481) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (1222481) NimBLE: att_handle=16[0m
+
+[0;32mI (1222481) sr900_bridge: READ response queued: 76,90,9,2 sample_age=766ms[0m
+[0;32mI (1222581) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (1222581) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (1222581) NimBLE: att_handle=16[0m
+
+[0;32mI (1222581) sr900_bridge: READ response queued: 76,90,9,2 sample_age=863ms[0m
+[0;32mI (1222681) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (1222681) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (1222681) NimBLE: att_handle=16[0m
+
+[0;32mI (1222681) sr900_bridge: READ response queued: 76,90,9,2 sample_age=960ms[0m
+[0;32mI (1222771) sr900_bridge: HiBean command: FAN;1[0m
+
+[0;32mI (1222771) sr900_bridge: CONTROL admitted type=2 value=1 id=5[0m
+[0;32mI (1222771) sr900_bridge: TX acknowledged write type=2 id=5 len=34 MTU=64[0m
+[0;32mI (1222781) NimBLE: GATT procedure initiated: write; [0m
+[0;32mI (1222781) NimBLE: att_handle=30 len=34[0m
+
+[0;32mI (1222871) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (1222871) sr900_bridge: READ deferred for control id=5[0m
+[0;32mI (1223221) sr900_bridge: TX complete type=2 id=5 ATT status=0[0m
+[0;32mI (1223591) sr900_bridge: STATUS seq=399 fan=1 heater=2 BT=76F ET=90F[0m
+[0;32mI (1223591) sr900_bridge: CONTROL confirmed id=5 elapsed=819ms fan=1 heater=2[0m
+[0;32mI (1223591) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (1223601) NimBLE: att_handle=16[0m
+
+[0;32mI (1223601) sr900_bridge: READ response queued: 76,90,1,2 sample_age=11ms[0m
+[0;32mI (1223701) sr900_bridge: HiBean command: FAN;0[0m
+
+[0;32mI (1223701) sr900_bridge: CONTROL admitted type=2 value=0 id=6[0m
+[0;32mI (1223701) sr900_bridge: TX acknowledged write type=2 id=6 len=34 MTU=64[0m
+[0;32mI (1223701) NimBLE: GATT procedure initiated: write; [0m
+[0;32mI (1223711) NimBLE: att_handle=30 len=34[0m
+
+[0;32mI (1223801) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (1223801) sr900_bridge: READ deferred for control id=6[0m
+[0;32mI (1223971) sr900_bridge: TX complete type=2 id=6 ATT status=0[0m
+[0;32mI (1225721) sr900_bridge: STATUS seq=400 fan=0 heater=2 BT=76F ET=90F[0m
+[0;32mI (1225721) sr900_bridge: CONTROL confirmed id=6 elapsed=2018ms fan=0 heater=2[0m
+[0;32mI (1225721) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (1225721) NimBLE: att_handle=16[0m
+
+[0;32mI (1225731) sr900_bridge: READ response queued: 76,90,0,2 sample_age=11ms[0m
+[0;32mI (1227341) sr900_bridge: STATUS seq=401 fan=9 heater=2 BT=75F ET=90F[0m
+[0;32mI (1229591) sr900_bridge: STATUS seq=402 fan=9 heater=2 BT=76F ET=90F[0m
+[0;32mI (1231221) sr900_bridge: STATUS seq=403 fan=9 heater=2 BT=75F ET=90F[0m
+[0;32mI (1233091) sr900_bridge: STATUS seq=404 fan=9 heater=2 BT=76F ET=90F[0m
+[0;32mI (1235471) sr900_bridge: STATUS seq=405 fan=9 heater=2 BT=75F ET=90F[0m
+[0;32mI (1236971) sr900_bridge: STATUS seq=406 fan=9 heater=2 BT=76F ET=90F[0m
+[0;32mI (1238971) sr900_bridge: STATUS seq=407 fan=9 heater=2 BT=75F ET=90F[0m
+[0;32mI (1240971) sr900_bridge: STATUS seq=408 fan=9 heater=2 BT=76F ET=90F[0m
+[0;32mI (1242841) sr900_bridge: STATUS seq=409 fan=9 heater=2 BT=75F ET=90F[0m
+[0;32mI (1244971) sr900_bridge: STATUS seq=410 fan=9 heater=2 BT=76F ET=90F[0m
+[0;32mI (1246721) sr900_bridge: STATUS seq=411 fan=9 heater=2 BT=76F ET=90F[0m
+[0;32mI (1248721) sr900_bridge: STATUS seq=412 fan=9 heater=2 BT=75F ET=90F[0m
+[0;32mI (1250591) sr900_bridge: STATUS seq=413 fan=9 heater=2 BT=76F ET=90F[0m
+[0;32mI (1252591) sr900_bridge: STATUS seq=414 fan=9 heater=2 BT=75F ET=90F[0m
+[0;32mI (1254971) sr900_bridge: STATUS seq=415 fan=9 heater=2 BT=76F ET=90F[0m
+[0;32mI (1256471) sr900_bridge: STATUS seq=416 fan=9 heater=2 BT=75F ET=90F[0m
+[0;32mI (1258341) sr900_bridge: STATUS seq=417 fan=9 heater=2 BT=76F ET=90F[0m
+[0;32mI (1260341) sr900_bridge: STATUS seq=418 fan=9 heater=2 BT=75F ET=90F[0m
+[0;32mI (1262221) sr900_bridge: STATUS seq=419 fan=9 heater=2 BT=76F ET=90F[0m
+[0;32mI (1264221) sr900_bridge: STATUS seq=420 fan=9 heater=2 BT=75F ET=90F[0m
+[0;32mI (1266221) sr900_bridge: STATUS seq=421 fan=9 heater=2 BT=76F ET=90F[0m
+[0;32mI (1268221) sr900_bridge: STATUS seq=422 fan=9 heater=2 BT=76F ET=90F[0m
+[0;32mI (1270221) sr900_bridge: STATUS seq=423 fan=9 heater=2 BT=76F ET=90F[0m
+[0;32mI (1271971) sr900_bridge: STATUS seq=424 fan=9 heater=2 BT=75F ET=90F[0m
+[0;32mI (1273181) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (1273181) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (1273181) NimBLE: att_handle=16[0m
+
+[0;32mI (1273181) sr900_bridge: READ response queued: 75,90,9,2 sample_age=1215ms[0m
+[0;32mI (1273281) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (1273281) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (1273281) NimBLE: att_handle=16[0m
+
+[0;32mI (1273281) sr900_bridge: READ response queued: 75,90,9,2 sample_age=1313ms[0m
+[0;32mI (1273371) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (1273371) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (1273381) NimBLE: att_handle=16[0m
+
+[0;32mI (1273381) sr900_bridge: READ response queued: 75,90,9,2 sample_age=1410ms[0m
+[0;32mI (1273971) sr900_bridge: STATUS seq=425 fan=9 heater=2 BT=76F ET=90F[0m
+[0;32mI (1275841) sr900_bridge: STATUS seq=426 fan=9 heater=2 BT=75F ET=90F[0m
+[0;32mI (1277841) sr900_bridge: STATUS seq=427 fan=9 heater=2 BT=76F ET=90F[0m
+[0;32mI (1279841) sr900_bridge: STATUS seq=428 fan=9 heater=2 BT=76F ET=90F[0m
+[0;32mI (1281721) sr900_bridge: STATUS seq=429 fan=9 heater=2 BT=76F ET=90F[0m
+[0;32mI (1283591) sr900_bridge: STATUS seq=430 fan=9 heater=2 BT=76F ET=90F[0m
+[0;32mI (1285841) sr900_bridge: STATUS seq=431 fan=9 heater=2 BT=76F ET=90F[0m
+[0;32mI (1286291) sr900_bridge: HiBean command: HEAT;1[0m
+
+[0;32mI (1286291) sr900_bridge: CONTROL admitted type=1 value=1 id=7[0m
+[0;32mI (1286291) sr900_bridge: TX acknowledged write type=1 id=7 len=34 MTU=64[0m
+[0;32mI (1286301) NimBLE: GATT procedure initiated: write; [0m
+[0;32mI (1286301) NimBLE: att_handle=30 len=34[0m
+
+[0;32mI (1286391) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (1286391) sr900_bridge: READ deferred for control id=7[0m
+[0;32mI (1286591) sr900_bridge: TX complete type=1 id=7 ATT status=0[0m
+[0;32mI (1287471) sr900_bridge: STATUS seq=432 fan=9 heater=2 BT=76F ET=90F[0m
+[0;32mI (1287471) sr900_bridge: WAIT feedback id=7 wanted=1 fan=9 heater=2[0m
+[0;32mI (1289471) sr900_bridge: STATUS seq=433 fan=9 heater=2 BT=76F ET=90F[0m
+[0;32mI (1289471) sr900_bridge: WAIT feedback id=7 wanted=1 fan=9 heater=2[0m
+[0;32mI (1291341) sr900_bridge: STATUS seq=434 fan=9 heater=2 BT=75F ET=90F[0m
+[1;31mE (1291351) sr900_bridge: CONTROL timeout id=7 wanted=1 fan=9 heater=2[0m
+[1;31mE (1291351) sr900_bridge: HiBean session failed: control feedback timeout; machine state is not guaranteed[0m
+[0;32mI (1291351) NimBLE: GAP procedure initiated: terminate connection; conn_handle=2 hci_reason=19[0m
+
+[0;32mI (1291361) sr900_bridge: HiBean notify subscription=0[0m
+[0;33mW (1291371) sr900_bridge: HiBean disconnected reason=534; no automatic machine stop[0m
+[0;32mI (1291371) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (1291381) NimBLE: disc_mode=2[0m
+[0;32mI (1291381) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (1291391) NimBLE: [0m
+
+[0;32mI (1291391) sr900_bridge: Advertising ESP32-SR900-Bridge[0m
+[0;32mI (1293341) sr900_bridge: STATUS seq=435 fan=9 heater=2 BT=76F ET=90F[0m
+[0;32mI (1294851) sr900_bridge: HiBean connected handle=2[0m
+[0;32mI (1295551) sr900_bridge: HiBean notify subscription=1[0m
+[0;32mI (1295591) sr900_bridge: STATUS seq=436 fan=9 heater=2 BT=75F ET=90F[0m
+[0;32mI (1295621) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (1295621) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (1295621) NimBLE: att_handle=16[0m
+
+[0;32mI (1295621) sr900_bridge: READ response queued: 75,90,9,2 sample_age=32ms[0m
+[0;32mI (1295771) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (1295771) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (1295771) NimBLE: att_handle=16[0m
+
+[0;32mI (1295771) sr900_bridge: READ response queued: 75,90,9,2 sample_age=178ms[0m
+[0;32mI (1295861) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (1295871) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (1295871) NimBLE: att_handle=16[0m
+
+[0;32mI (1295871) sr900_bridge: READ response queued: 75,90,9,2 sample_age=276ms[0m
+[0;32mI (1295961) sr900_bridge: HiBean command: HEAT;1[0m
+
+[0;32mI (1295961) sr900_bridge: CONTROL admitted type=1 value=1 id=8[0m
+[0;32mI (1295961) sr900_bridge: TX acknowledged write type=1 id=8 len=34 MTU=64[0m
+[0;32mI (1295971) NimBLE: GATT procedure initiated: write; [0m
+[0;32mI (1295971) NimBLE: att_handle=30 len=34[0m
+
+[0;32mI (1296061) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (1296061) sr900_bridge: READ deferred for control id=8[0m
+[0;32mI (1296591) sr900_bridge: TX complete type=1 id=8 ATT status=0[0m
+[0;32mI (1297221) sr900_bridge: STATUS seq=437 fan=9 heater=2 BT=76F ET=90F[0m
+[0;32mI (1297221) sr900_bridge: WAIT feedback id=8 wanted=1 fan=9 heater=2[0m
+[0;32mI (1299221) sr900_bridge: STATUS seq=438 fan=9 heater=2 BT=75F ET=90F[0m
+[0;32mI (1299221) sr900_bridge: WAIT feedback id=8 wanted=1 fan=9 heater=2[0m
+[1;31mE (1300981) sr900_bridge: CONTROL timeout id=8 wanted=1 fan=9 heater=2[0m
+[1;31mE (1300981) sr900_bridge: HiBean session failed: control feedback timeout; machine state is not guaranteed[0m
+[0;32mI (1300981) NimBLE: GAP procedure initiated: terminate connection; conn_handle=2 hci_reason=19[0m
+
+[0;32mI (1301031) sr900_bridge: HiBean notify subscription=0[0m
+[0;33mW (1301031) sr900_bridge: HiBean disconnected reason=534; no automatic machine stop[0m
+[0;32mI (1301041) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (1301041) NimBLE: disc_mode=2[0m
+[0;32mI (1301041) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (1301051) NimBLE: [0m
+
+[0;32mI (1301051) sr900_bridge: Advertising ESP32-SR900-Bridge[0m
+[0;32mI (1301091) sr900_bridge: STATUS seq=439 fan=9 heater=2 BT=76F ET=90F[0m
+[0;32mI (1303221) sr900_bridge: STATUS seq=440 fan=9 heater=2 BT=75F ET=89F[0m
+[0;32mI (1304971) sr900_bridge: STATUS seq=441 fan=9 heater=2 BT=76F ET=90F[0m
+[0;32mI (1307091) sr900_bridge: STATUS seq=442 fan=9 heater=2 BT=75F ET=90F[0m
+[0;32mI (1308471) sr900_bridge: HiBean connected handle=2[0m
+[0;32mI (1308841) sr900_bridge: STATUS seq=443 fan=9 heater=2 BT=76F ET=90F[0m
+[0;32mI (1309211) sr900_bridge: HiBean notify subscription=1[0m
+[0;32mI (1309291) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (1309291) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (1309291) NimBLE: att_handle=16[0m
+
+[0;32mI (1309291) sr900_bridge: READ response queued: 76,90,9,2 sample_age=449ms[0m
+[0;32mI (1309381) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (1309391) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (1309391) NimBLE: att_handle=16[0m
+
+[0;32mI (1309391) sr900_bridge: READ response queued: 76,90,9,2 sample_age=546ms[0m
+[0;32mI (1309481) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (1309481) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (1309481) NimBLE: att_handle=16[0m
+
+[0;32mI (1309481) sr900_bridge: READ response queued: 76,90,9,2 sample_age=643ms[0m
+[0;32mI (1309581) sr900_bridge: HiBean command: HEAT;1[0m
+
+[0;32mI (1309581) sr900_bridge: CONTROL admitted type=1 value=1 id=9[0m
+[0;32mI (1309581) sr900_bridge: TX acknowledged write type=1 id=9 len=34 MTU=64[0m
+[0;32mI (1309591) NimBLE: GATT procedure initiated: write; [0m
+[0;32mI (1309591) NimBLE: att_handle=30 len=34[0m
+
+[0;32mI (1309681) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (1309681) sr900_bridge: READ deferred for control id=9[0m
+[0;32mI (1309971) sr900_bridge: TX complete type=1 id=9 ATT status=0[0m
+[0;32mI (1310971) sr900_bridge: STATUS seq=444 fan=9 heater=1 BT=75F ET=89F[0m
+[0;32mI (1310971) sr900_bridge: CONTROL confirmed id=9 elapsed=1387ms fan=9 heater=1[0m
+[0;32mI (1310971) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (1310971) NimBLE: att_handle=16[0m
+
+[0;32mI (1310981) sr900_bridge: READ response queued: 75,89,9,1 sample_age=11ms[0m
+[0;32mI (1311041) sr900_bridge: HiBean command: HEAT;0[0m
+
+[0;32mI (1311041) sr900_bridge: CONTROL admitted type=1 value=0 id=10[0m
+[0;32mI (1311041) sr900_bridge: TX acknowledged write type=1 id=10 len=34 MTU=64[0m
+[0;32mI (1311051) NimBLE: GATT procedure initiated: write; [0m
+[0;32mI (1311051) NimBLE: att_handle=30 len=34[0m
+
+[0;32mI (1311191) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (1311191) sr900_bridge: READ deferred for control id=10[0m
+[0;32mI (1311471) sr900_bridge: TX complete type=1 id=10 ATT status=0[0m
+[0;32mI (1312841) sr900_bridge: STATUS seq=445 fan=9 heater=0 BT=76F ET=90F[0m
+[0;32mI (1312841) sr900_bridge: CONTROL confirmed id=10 elapsed=1799ms fan=9 heater=0[0m
+[0;32mI (1312841) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (1312851) NimBLE: att_handle=16[0m
+
+[0;32mI (1312851) sr900_bridge: READ response queued: 76,90,9,0 sample_age=11ms[0m
+[0;32mI (1314721) sr900_bridge: STATUS seq=446 fan=9 heater=0 BT=75F ET=89F[0m
+[0;32mI (1316591) sr900_bridge: STATUS seq=447 fan=9 heater=2 BT=76F ET=90F[0m
+[0;32mI (1318161) sr900_bridge: HiBean command: FAN;1[0m
+
+[0;32mI (1318161) sr900_bridge: CONTROL admitted type=2 value=1 id=11[0m
+[0;32mI (1318161) sr900_bridge: TX acknowledged write type=2 id=11 len=34 MTU=64[0m
+[0;32mI (1318171) NimBLE: GATT procedure initiated: write; [0m
+[0;32mI (1318171) NimBLE: att_handle=30 len=34[0m
+
+[0;32mI (1318261) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (1318261) sr900_bridge: READ deferred for control id=11[0m
+[0;32mI (1318471) sr900_bridge: TX complete type=2 id=11 ATT status=0[0m
+[0;32mI (1318721) sr900_bridge: STATUS seq=448 fan=9 heater=2 BT=75F ET=89F[0m
+[0;32mI (1318721) sr900_bridge: WAIT feedback id=11 wanted=1 fan=9 heater=2[0m
+[0;32mI (1320591) sr900_bridge: STATUS seq=449 fan=1 heater=2 BT=72F ET=90F[0m
+[0;32mI (1320591) sr900_bridge: CONTROL confirmed id=11 elapsed=2432ms fan=1 heater=2[0m
+[0;32mI (1320591) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (1320601) NimBLE: att_handle=16[0m
+
+[0;32mI (1320601) sr900_bridge: READ response queued: 72,90,1,2 sample_age=11ms[0m
+[0;32mI (1320691) sr900_bridge: HiBean command: FAN;0[0m
+
+[0;32mI (1320701) sr900_bridge: CONTROL admitted type=2 value=0 id=12[0m
+[0;32mI (1320701) sr900_bridge: TX acknowledged write type=2 id=12 len=34 MTU=64[0m
+[0;32mI (1320701) NimBLE: GATT procedure initiated: write; [0m
+[0;32mI (1320711) NimBLE: att_handle=30 len=34[0m
+
+[0;32mI (1320791) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (1320791) sr900_bridge: READ deferred for control id=12[0m
+[0;32mI (1321091) sr900_bridge: TX complete type=2 id=12 ATT status=0[0m
+[0;32mI (1322841) sr900_bridge: STATUS seq=450 fan=0 heater=2 BT=75F ET=89F[0m
+[0;32mI (1322841) sr900_bridge: CONTROL confirmed id=12 elapsed=2147ms fan=0 heater=2[0m
+[0;32mI (1322841) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (1322851) NimBLE: att_handle=16[0m
+
+[0;32mI (1322851) sr900_bridge: READ response queued: 75,89,0,2 sample_age=11ms[0m
+[0;32mI (1324721) sr900_bridge: STATUS seq=451 fan=9 heater=2 BT=76F ET=90F[0m
+[0;32mI (1326341) sr900_bridge: STATUS seq=452 fan=9 heater=2 BT=75F ET=89F[0m
+[0;32mI (1328471) sr900_bridge: STATUS seq=453 fan=9 heater=2 BT=76F ET=90F[0m
+[0;32mI (1330341) sr900_bridge: STATUS seq=454 fan=9 heater=2 BT=75F ET=89F[0m
+[0;32mI (1332471) sr900_bridge: STATUS seq=455 fan=9 heater=2 BT=76F ET=90F[0m
+[0;32mI (1334091) sr900_bridge: STATUS seq=456 fan=9 heater=2 BT=75F ET=89F[0m
+[0;32mI (1336091) sr900_bridge: STATUS seq=457 fan=9 heater=2 BT=76F ET=89F[0m
+[0;32mI (1338091) sr900_bridge: STATUS seq=458 fan=9 heater=2 BT=76F ET=90F[0m
+[0;32mI (1339971) sr900_bridge: STATUS seq=459 fan=9 heater=2 BT=76F ET=90F[0m
+[0;32mI (1341841) sr900_bridge: STATUS seq=460 fan=9 heater=2 BT=76F ET=90F[0m
+[0;32mI (1344471) sr900_bridge: STATUS seq=461 fan=9 heater=2 BT=75F ET=89F[0m
+[0;32mI (1346091) sr900_bridge: STATUS seq=462 fan=9 heater=2 BT=76F ET=90F[0m
+[0;32mI (1347721) sr900_bridge: STATUS seq=463 fan=9 heater=2 BT=75F ET=89F[0m
+[0;32mI (1349411) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (1349411) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (1349411) NimBLE: att_handle=16[0m
+
+[0;32mI (1349411) sr900_bridge: READ response queued: 75,89,9,2 sample_age=1694ms[0m
+[0;32mI (1349721) sr900_bridge: STATUS seq=464 fan=9 heater=2 BT=76F ET=90F[0m
+[0;32mI (1351501) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (1351501) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (1351511) NimBLE: att_handle=16[0m
+
+[0;32mI (1351511) sr900_bridge: READ response queued: 76,90,9,2 sample_age=1790ms[0m
+[0;32mI (1351721) sr900_bridge: STATUS seq=465 fan=9 heater=2 BT=76F ET=89F[0m
+[0;32mI (1353501) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (1353501) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (1353501) NimBLE: att_handle=16[0m
+
+[0;32mI (1353501) sr900_bridge: READ response queued: 76,89,9,2 sample_age=1789ms[0m
+[0;32mI (1353721) sr900_bridge: STATUS seq=466 fan=9 heater=2 BT=76F ET=90F[0m
+[0;32mI (1355471) sr900_bridge: STATUS seq=467 fan=9 heater=2 BT=76F ET=90F[0m
+[0;32mI (1355501) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (1355501) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (1355501) NimBLE: att_handle=16[0m
+
+[0;32mI (1355501) sr900_bridge: READ response queued: 76,90,9,2 sample_age=37ms[0m
+[0;32mI (1355751) sr900_bridge: HiBean command: HEAT;0[0m
+
+[0;32mI (1355751) sr900_bridge: CONTROL admitted type=1 value=0 id=13[0m
+[0;32mI (1355751) sr900_bridge: TX acknowledged write type=1 id=13 len=34 MTU=64[0m
+[0;32mI (1355751) NimBLE: GATT procedure initiated: write; [0m
+[0;32mI (1355761) NimBLE: att_handle=30 len=34[0m
+
+[0;32mI (1355891) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (1355891) sr900_bridge: READ deferred for control id=13[0m
+[0;32mI (1355971) sr900_bridge: TX complete type=1 id=13 ATT status=0[0m
+[0;32mI (1357471) sr900_bridge: STATUS seq=468 fan=9 heater=0 BT=76F ET=90F[0m
+[0;32mI (1357471) sr900_bridge: CONTROL confirmed id=13 elapsed=1721ms fan=9 heater=0[0m
+[0;32mI (1357471) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (1357471) NimBLE: att_handle=16[0m
+
+[0;32mI (1357481) sr900_bridge: READ response queued: 76,90,9,0 sample_age=11ms[0m
+[0;32mI (1357551) sr900_bridge: HiBean command: HEAT;8[0m
+
+[0;32mI (1357551) sr900_bridge: CONTROL admitted type=1 value=8 id=14[0m
+[0;32mI (1357551) sr900_bridge: TX acknowledged write type=1 id=14 len=34 MTU=64[0m
+[0;32mI (1357561) NimBLE: GATT procedure initiated: write; [0m
+[0;32mI (1357561) NimBLE: att_handle=30 len=34[0m
+
+[0;32mI (1357651) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (1357651) sr900_bridge: READ deferred for control id=14[0m
+[0;32mI (1357721) sr900_bridge: TX complete type=1 id=14 ATT status=0[0m
+[0;32mI (1359341) sr900_bridge: STATUS seq=469 fan=9 heater=8 BT=76F ET=90F[0m
+[0;32mI (1359341) sr900_bridge: CONTROL confirmed id=14 elapsed=1792ms fan=9 heater=8[0m
+[0;32mI (1359341) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (1359351) NimBLE: att_handle=16[0m
+
+[0;32mI (1359351) sr900_bridge: READ response queued: 76,90,9,8 sample_age=11ms[0m
+[0;32mI (1359401) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (1359401) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (1359401) NimBLE: att_handle=16[0m
+
+[0;32mI (1359401) sr900_bridge: READ response queued: 76,90,9,8 sample_age=63ms[0m
+[0;32mI (1359501) sr900_bridge: HiBean command: HEAT;9[0m
+
+[0;32mI (1359501) sr900_bridge: CONTROL admitted type=1 value=9 id=15[0m
+[0;32mI (1359501) sr900_bridge: TX acknowledged write type=1 id=15 len=34 MTU=64[0m
+[0;32mI (1359511) NimBLE: GATT procedure initiated: write; [0m
+[0;32mI (1359511) NimBLE: att_handle=30 len=34[0m
+
+[0;32mI (1359601) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (1359601) sr900_bridge: READ deferred for control id=15[0m
+[0;32mI (1360341) sr900_bridge: TX complete type=1 id=15 ATT status=0[0m
+[0;32mI (1361341) sr900_bridge: STATUS seq=470 fan=9 heater=9 BT=76F ET=89F[0m
+[0;32mI (1361341) sr900_bridge: CONTROL confirmed id=15 elapsed=1842ms fan=9 heater=9[0m
+[0;32mI (1361341) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (1361351) NimBLE: att_handle=16[0m
+
+[0;32mI (1361351) sr900_bridge: READ response queued: 76,89,9,9 sample_age=11ms[0m
+[0;32mI (1361451) sr900_bridge: HiBean command: FAN;0[0m
+
+[0;32mI (1361451) sr900_bridge: CONTROL admitted type=2 value=0 id=16[0m
+[0;32mI (1361451) sr900_bridge: TX acknowledged write type=2 id=16 len=34 MTU=64[0m
+[0;32mI (1361461) NimBLE: GATT procedure initiated: write; [0m
+[0;32mI (1361461) NimBLE: att_handle=30 len=34[0m
+
+[0;32mI (1361551) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (1361551) sr900_bridge: READ deferred for control id=16[0m
+[0;32mI (1361971) sr900_bridge: TX complete type=2 id=16 ATT status=0[0m
+[0;32mI (1363221) sr900_bridge: STATUS seq=471 fan=9 heater=9 BT=76F ET=90F[0m
+[0;32mI (1363221) sr900_bridge: WAIT feedback id=16 wanted=0 fan=9 heater=9[0m
+[0;32mI (1365471) sr900_bridge: STATUS seq=472 fan=9 heater=2 BT=76F ET=89F[0m
+[0;32mI (1365471) sr900_bridge: WAIT feedback id=16 wanted=0 fan=9 heater=2[0m
+[1;31mE (1366531) sr900_bridge: CONTROL timeout id=16 wanted=0 fan=9 heater=2[0m
+[1;31mE (1366531) sr900_bridge: HiBean session failed: control feedback timeout; machine state is not guaranteed[0m
+[0;32mI (1366541) NimBLE: GAP procedure initiated: terminate connection; conn_handle=2 hci_reason=19[0m
+
+[0;32mI (1366571) sr900_bridge: HiBean notify subscription=0[0m
+[0;33mW (1366571) sr900_bridge: HiBean disconnected reason=534; no automatic machine stop[0m
+[0;32mI (1366571) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (1366571) NimBLE: disc_mode=2[0m
+[0;32mI (1366581) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (1366591) NimBLE: [0m
+
+[0;32mI (1366591) sr900_bridge: Advertising ESP32-SR900-Bridge[0m
+[0;32mI (1367091) sr900_bridge: STATUS seq=473 fan=9 heater=2 BT=76F ET=90F[0m
+[0;32mI (1369091) sr900_bridge: STATUS seq=474 fan=9 heater=2 BT=75F ET=89F[0m
+[0;32mI (1371471) sr900_bridge: STATUS seq=475 fan=9 heater=2 BT=76F ET=90F[0m
+[0;32mI (1372971) sr900_bridge: STATUS seq=476 fan=9 heater=2 BT=75F ET=89F[0m
+[0;32mI (1374851) sr900_bridge: HiBean connected handle=2[0m
+[0;32mI (1375091) sr900_bridge: STATUS seq=477 fan=9 heater=2 BT=76F ET=90F[0m
+[0;32mI (1375491) sr900_bridge: HiBean command: READ[0m
+
+[0;33mW (1375491) sr900_bridge: READ rejected: ready=1 subscribed=0 fault=0[0m
+[0;32mI (1376971) sr900_bridge: STATUS seq=478 fan=9 heater=2 BT=75F ET=89F[0m
+[0;32mI (1378841) sr900_bridge: STATUS seq=479 fan=9 heater=2 BT=76F ET=90F[0m
+[0;32mI (1380721) sr900_bridge: STATUS seq=480 fan=9 heater=2 BT=75F ET=89F[0m
+[0;32mI (1382721) sr900_bridge: STATUS seq=481 fan=9 heater=2 BT=76F ET=90F[0m
+[0;33mW (1383111) sr900_bridge: HiBean disconnected reason=531; no automatic machine stop[0m
+[0;32mI (1383111) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (1383111) NimBLE: disc_mode=2[0m
+[0;32mI (1383121) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (1383121) NimBLE: [0m
+
+[0;32mI (1383131) sr900_bridge: Advertising ESP32-SR900-Bridge[0m
+inary image header(2048k). Using the size in the binary image heI (426) NimBLE: GAP procedure initiated: stop advertising.
+
+[0;32mI (426) sr900_bridge: NimBLE synced; HiBean status handle=16[0m
+[0;32mI (426) NimBLE: GAP procedure initiated: discovery; [0m
+[0;32mI (436) NimBLE: own_addr_type=0 filter_policy=0 passive=0 limited=0 filter_duplicates=1 [0m
+[0;32mI (446) NimBLE: duration=10000ms[0m
+[0;32mI (446) NimBLE: [0m
+
+[0;32mI (446) sr900_bridge: Scanning for SR900-FDB666[0m
+[0;32mI (456) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (456) NimBLE: disc_mode=2[0m
+[0;32mI (456) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (466) NimBLE: [0m
+
+[0;32mI (466) sr900_bridge: Advertising ESP32-SR900-Bridge[0m
+[0;32mI (476) main_task: Returned from app_main()[0m
+[0;32mI (2056) NimBLE: GAP procedure initiated: connect; [0m
+[0;32mI (2056) NimBLE: peer_addr_type=0 peer_addr=[0m
+[0;32mI (2056) NimBLE: 50:32:5f:fd:b6:66[0m
+[0;32mI (2056) NimBLE:  scan_itvl=16 scan_window=16 itvl_min=80 itvl_max=100 latency=0 supervision_timeout=400 min_ce_len=0 max_ce_len=0 own_addr_type=0[0m
+[0;32mI (2066) NimBLE: [0m
+
+[0;32mI (2966) NimBLE: Reattempt connection; reason = 0x3e, status = 0,reattempt count = 0 [0m
+[0;32mI (2966) NimBLE: GAP procedure initiated: connect; [0m
+[0;32mI (2966) NimBLE: peer_addr_type=0 peer_addr=[0m
+[0;32mI (2966) NimBLE: 50:32:5f:fd:b6:66[0m
+[0;32mI (2966) NimBLE:  scan_itvl=16 scan_window=16 itvl_min=80 itvl_max=100 latency=0 supervision_timeout=400 min_ce_len=0 max_ce_len=0 own_addr_type=0[0m
+[0;32mI (2986) NimBLE: [0m
+
+[0;32mI (3966) NimBLE: Reattempt connection; reason = 0x3e, status = 0,reattempt count = 1 [0m
+[0;32mI (3966) NimBLE: GAP procedure initiated: connect; [0m
+[0;32mI (3966) NimBLE: peer_addr_type=0 peer_addr=[0m
+[0;32mI (3966) NimBLE: 50:32:5f:fd:b6:66[0m
+[0;32mI (3966) NimBLE:  scan_itvl=16 scan_window=16 itvl_min=80 itvl_max=100 latency=0 supervision_timeout=400 min_ce_len=0 max_ce_len=0 own_addr_type=0[0m
+[0;32mI (3986) NimBLE: [0m
+
+[0;32mI (4086) sr900_bridge: SR900 connected handle=3; exchanging MTU[0m
+[0;32mI (4086) NimBLE: GATT procedure initiated: exchange mtu[0m
+
+[0;32mI (4086) sr900_bridge: MTU exchange already active/completed; waiting for MTU >= 37 (actual=64)[0m
+[0;32mI (4186) sr900_bridge: SR900 MTU ready: 64; starting service discovery[0m
+[0;32mI (4186) NimBLE: GATT procedure initiated: discover service by uuid; uuid=[0m
+[0;32mI (4186) NimBLE: 0xdf00[0m
+[0;32mI (4186) NimBLE: [0m
+
+[0;32mI (4966) NimBLE: GATT procedure initiated: discover all characteristics; [0m
+[0;32mI (4966) NimBLE: start_handle=25 end_handle=30[0m
+
+[1;31mE (4996) NimBLE: ble_gap_adv_validate rc=6[0m
+
+[1;31mE (4996) sr900_bridge: advertise start rc=6[0m
+[0;32mI (4996) sr900_bridge: HiBean connected handle=2[0m
+[0;32mI (6086) NimBLE: GATT procedure initiated: discover all descriptors; [0m
+[0;32mI (6086) NimBLE: chr_val_handle=27 end_handle=28[0m
+
+[0;32mI (6336) NimBLE: GATT procedure initiated: write; [0m
+[0;32mI (6336) NimBLE: att_handle=28 len=2[0m
+
+[0;32mI (6716) sr900_bridge: Subscribed to SR900 notifications[0m
+[0;32mI (6716) sr900_bridge: TX acknowledged write type=38 id=0 len=34 MTU=64[0m
+[0;32mI (6716) NimBLE: GATT procedure initiated: write; [0m
+[0;32mI (6716) NimBLE: att_handle=30 len=34[0m
+
+[0;32mI (7466) sr900_bridge: TX complete type=38 id=0 ATT status=0[0m
+[0;32mI (8086) sr900_bridge: MAC received; scheduling settings[0m
+[0;32mI (8086) sr900_bridge: TX acknowledged write type=43 id=0 len=34 MTU=64[0m
+[0;32mI (8086) NimBLE: GATT procedure initiated: write; [0m
+[0;32mI (8096) NimBLE: att_handle=30 len=34[0m
+
+[0;32mI (8336) sr900_bridge: TX complete type=43 id=0 ATT status=0[0m
+[0;32mI (9386) sr900_bridge: HiBean notify subscription=1[0m
+[0;32mI (9486) sr900_bridge: HiBean command: READ[0m
+
+[0;33mW (9486) sr900_bridge: READ rejected: ready=0 subscribed=1 fault=0[0m
+[0;32mI (9966) sr900_bridge: STATUS seq=1 fan=9 heater=2 BT=76F ET=89F[0m
+[0;32mI (11836) sr900_bridge: STATUS seq=2 fan=9 heater=2 BT=76F ET=90F[0m
+[0;32mI (12466) sr900_bridge: SETTINGS ACKED[0m
+[0;32mI (12466) sr900_bridge: SR900 READY: settings and ATT write acknowledged[0m
+[0;32mI (13836) sr900_bridge: STATUS seq=3 fan=9 heater=2 BT=76F ET=89F[0m
+[0;32mI (13876) sr900_bridge: HiBean notify subscription=0[0m
+[0;33mW (13876) sr900_bridge: HiBean disconnected reason=531; no automatic machine stop[0m
+[0;32mI (13876) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (13876) NimBLE: disc_mode=2[0m
+[0;32mI (13886) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (13896) NimBLE: [0m
+
+[0;32mI (13896) sr900_bridge: Advertising ESP32-SR900-Bridge[0m
+[0;32mI (14056) sr900_bridge: HiBean connected handle=2[0m
+[0;32mI (14736) sr900_bridge: HiBean notify subscription=1[0m
+[0;32mI (14766) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (14766) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14766) NimBLE: att_handle=16[0m
+
+[0;32mI (14766) sr900_bridge: READ response queued: 76,89,9,2 sample_age=934ms[0m
+[0;32mI (15496) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (15496) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15506) NimBLE: att_handle=16[0m
+
+[0;32mI (15506) sr900_bridge: READ response queued: 76,89,9,2 sample_age=1665ms[0m
+[0;32mI (15716) sr900_bridge: STATUS seq=4 fan=9 heater=2 BT=76F ET=89F[0m
+[0;32mI (16866) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (16866) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16866) NimBLE: att_handle=16[0m
+
+[0;32mI (16866) sr900_bridge: READ response queued: 76,89,9,2 sample_age=1155ms[0m
+[0;32mI (17496) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (17496) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17496) NimBLE: att_handle=16[0m
+
+[0;32mI (17496) sr900_bridge: READ response queued: 76,89,9,2 sample_age=1789ms[0m
+[0;32mI (18086) sr900_bridge: STATUS seq=5 fan=9 heater=2 BT=76F ET=89F[0m
+[0;32mI (18866) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (18866) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18866) NimBLE: att_handle=16[0m
+
+[0;32mI (18866) sr900_bridge: READ response queued: 76,89,9,2 sample_age=778ms[0m
+[0;32mI (19496) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (19496) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19496) NimBLE: att_handle=16[0m
+
+[0;32mI (19496) sr900_bridge: READ response queued: 76,89,9,2 sample_age=1412ms[0m
+[0;32mI (19836) sr900_bridge: STATUS seq=6 fan=9 heater=2 BT=76F ET=89F[0m
+[0;32mI (20866) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (20866) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20866) NimBLE: att_handle=16[0m
+
+[0;32mI (20866) sr900_bridge: READ response queued: 76,89,9,2 sample_age=1027ms[0m
+[0;32mI (21496) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (21496) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21496) NimBLE: att_handle=16[0m
+
+[0;32mI (21496) sr900_bridge: READ response queued: 76,89,9,2 sample_age=1661ms[0m
+[0;32mI (21716) sr900_bridge: STATUS seq=7 fan=9 heater=2 BT=76F ET=89F[0m
+[0;32mI (22126) sr900_bridge: HiBean command: HEAT;7[0m
+
+[0;32mI (22126) sr900_bridge: CONTROL admitted type=1 value=7 id=1[0m
+[0;32mI (22126) sr900_bridge: TX acknowledged write type=1 id=1 len=34 MTU=64[0m
+[0;32mI (22136) NimBLE: GATT procedure initiated: write; [0m
+[0;32mI (22136) NimBLE: att_handle=30 len=34[0m
+
+[0;32mI (22226) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (22226) sr900_bridge: READ deferred for control id=1[0m
+[0;32mI (22336) sr900_bridge: TX complete type=1 id=1 ATT status=0[0m
+[0;32mI (23466) sr900_bridge: STATUS seq=8 fan=9 heater=7 BT=76F ET=90F[0m
+[0;32mI (23466) sr900_bridge: CONTROL confirmed id=1 elapsed=1332ms fan=9 heater=7[0m
+[0;32mI (23466) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (23466) NimBLE: att_handle=16[0m
+
+[0;32mI (23476) sr900_bridge: READ response queued: 76,90,9,7 sample_age=10ms[0m
+[0;32mI (23546) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (23546) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (23546) NimBLE: att_handle=16[0m
+
+[0;32mI (23546) sr900_bridge: READ response queued: 76,90,9,7 sample_age=83ms[0m
+[0;32mI (24856) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (24856) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (24856) NimBLE: att_handle=16[0m
+
+[0;32mI (24866) sr900_bridge: READ response queued: 76,90,9,7 sample_age=1400ms[0m
+[0;32mI (25336) sr900_bridge: STATUS seq=9 fan=9 heater=7 BT=76F ET=89F[0m
+[0;32mI (25496) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (25496) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (25496) NimBLE: att_handle=16[0m
+
+[0;32mI (25496) sr900_bridge: READ response queued: 76,89,9,7 sample_age=158ms[0m
+[0;32mI (26856) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (26856) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (26856) NimBLE: att_handle=16[0m
+
+[0;32mI (26856) sr900_bridge: READ response queued: 76,89,9,7 sample_age=1523ms[0m
+[0;32mI (27466) sr900_bridge: STATUS seq=10 fan=9 heater=2 BT=75F ET=89F[0m
+[0;32mI (27496) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (27496) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (27496) NimBLE: att_handle=16[0m
+
+[0;32mI (27496) sr900_bridge: READ response queued: 75,89,9,2 sample_age=32ms[0m
+[0;32mI (28856) sr900_bridge: HiBean command: READ[0m
+
+[0;32mI (28856) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (28856) NimBLE: att_handle=16[0m
+
+[0;32mI (28856) sr900_bridge: READ response queued: 75,89,9,2 sample_age=1397ms[0m
+[0;32mI (29336) sr900_bridge: STATUS seq=11 fan=

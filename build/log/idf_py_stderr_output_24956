@@ -1,0 +1,14 @@
+Command: ninja flash
+
+A fatal error occurred: Could not open COM7, the port is busy or doesn't exist.
+(could not open port 'COM7': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2))
+
+Hint: Check if the port is correct and ESP connected
+
+CMake Error at C:/esp/v6.1/esp-idf/components/esptool_py/run_serial_tool.cmake:142 (message):
+  
+  C:/Espressif/tools/python/v6.1/venv/Scripts/python.exe;-m;esptool;--chip;esp32s3
+  failed.
+
+
+

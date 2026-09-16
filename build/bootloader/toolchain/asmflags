@@ -1,0 +1,5 @@
+"-specs=C:/SW Project/SRW900/build/bootloader/specs/picolibc.specs"
+-mlongcalls
+-fno-builtin-memcpy
+-fno-builtin-memset
+-fno-builtin-bzero

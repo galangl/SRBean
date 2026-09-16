@@ -1,0 +1,9 @@
+
+
+# Load bootloader symbols
+set confirm off
+    add-symbol-file C:/SW Project/SRW900/build/bootloader/bootloader.elf
+set confirm on
+
+# Load application symbols
+file C:/SW Project/SRW900/build/sr900_hibean_bridge.elf

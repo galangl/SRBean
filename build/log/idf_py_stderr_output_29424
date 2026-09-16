@@ -1,0 +1,109 @@
+Command: cmake -G Ninja -B C:\SW Project\SRW900\build -DPYTHON_DEPS_CHECKED=1 -DPYTHON=C:\Espressif\tools\python\v6.1\venv\Scripts\python.exe -DESP_PLATFORM=1 -DCCACHE_ENABLE=False C:\SW Project\SRW900
+NOTE: C:/esp/v6.1/esp-idf/components/bt/host/nimble/Kconfig.in:1428: BT_NIMBLE_MESH_PROVISIONER: 'default 0' is not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: C:/esp/v6.1/esp-idf/components/fatfs/Kconfig:240: FATFS_PRINT_LLI: 'default 0' is not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: C:/esp/v6.1/esp-idf/components/fatfs/Kconfig:245: FATFS_PRINT_FLOAT: 'default 0' is not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: C:/esp/v6.1/esp-idf/components/bt/sdkconfig.rename.esp32s3:4: duplicate rename mapping for CONFIG_BT_NIMBLE_COEX_PHY_CODED_TX_RX_TLIM_EN: previous target CONFIG_BT_LE_COEX_PHY_CODED_TX_RX_TLIM_EN, new target CONFIG_BT_CTRL_COEX_PHY_CODED_TX_RX_TLIM_EN - last mapping is used
+NOTE: C:/esp/v6.1/esp-idf/components/bt/sdkconfig.rename.esp32s3:5: duplicate rename mapping for CONFIG_BT_NIMBLE_COEX_PHY_CODED_TX_RX_TLIM_DIS: previous target CONFIG_BT_LE_COEX_PHY_CODED_TX_RX_TLIM_DIS, new target CONFIG_BT_CTRL_COEX_PHY_CODED_TX_RX_TLIM_DIS - last mapping is used
+Loading defaults file C:/SW Project/SRW900/sdkconfig.defaults...
+NOTE: C:\Users\galan\AppData\Local\Temp\kconfgen_tmpcw5z1cem:11: CONFIG_BT_NIMBLE_ACL_BUF_COUNT was replaced with CONFIG_BT_NIMBLE_TRANSPORT_ACL_FROM_LL_COUNT
+NOTE: Kconfig parser version: 1
+NOTE: Kconfig defaults policy: use sdkconfig
+NOTE: Status: Finished with notifications
+NOTE: C:/esp/v6.1/esp-idf/components/bt/host/nimble/Kconfig.in:509: BT_NIMBLE_MSYS_BUF_FROM_HEAP has user-set value y from C:\Users\galan\AppData\Local\Temp\kconfgen_tmpcw5z1cem but is not visible (disabled dependency)
+HINT: Disabled symbols/choices are not written into sdkconfig file. Setting their user value has no effect.
+CMake Warning (dev) at C:/Espressif/tools/cmake/4.0.3/share/cmake-4.0/Modules/GNUInstallDirs.cmake:250 (message):
+  Unable to determine default CMAKE_INSTALL_LIBDIR directory because no
+  target architecture is known.  Please enable at least one language before
+  including GNUInstallDirs.
+Call Stack (most recent call first):
+  C:/esp/v6.1/esp-idf/components/mbedtls/mbedtls/CMakeLists.txt:59 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning at C:/esp/v6.1/esp-idf/tools/cmake/component_validation.cmake:106 (message):
+  Private include directory
+  'C:/esp/v6.1/esp-idf/components/esp_wifi/wifi_apps/roaming_app/include'
+  belongs to component esp_wifi but is being used by component
+  wpa_supplicant.  It is recommended to define the component dependency for
+  wpa_supplicant on the component esp_wifi, i.e.  'idf_component_register(...
+  PRIV_REQUIRES esp_wifi)' in the CMakeLists.txt of wpa_supplicant, and
+  specify the included directory as idf_component_register(...
+  PRIV_INCLUDE_DIRS <dir relative to component>) in the CMakeLists.txt of
+  component esp_wifi.
+Call Stack (most recent call first):
+  C:/esp/v6.1/esp-idf/tools/cmake/component_validation.cmake:130 (__component_validation_check_include_dirs)
+  C:/esp/v6.1/esp-idf/CMakeLists.txt:356 (__component_validation_run_checks)
+
+
+CMake Warning at C:/esp/v6.1/esp-idf/tools/cmake/component_validation.cmake:106 (message):
+  Private include directory
+  'C:/esp/v6.1/esp-idf/components/esp_wifi/wifi_apps/roaming_app/src' belongs
+  to component esp_wifi but is being used by component wpa_supplicant.  It is
+  recommended to define the component dependency for wpa_supplicant on the
+  component esp_wifi, i.e.  'idf_component_register(...  PRIV_REQUIRES
+  esp_wifi)' in the CMakeLists.txt of wpa_supplicant, and specify the
+  included directory as idf_component_register(...  PRIV_INCLUDE_DIRS <dir
+  relative to component>) in the CMakeLists.txt of component esp_wifi.
+Call Stack (most recent call first):
+  C:/esp/v6.1/esp-idf/tools/cmake/component_validation.cmake:130 (__component_validation_check_include_dirs)
+  C:/esp/v6.1/esp-idf/CMakeLists.txt:356 (__component_validation_run_checks)
+
+
+CMake Warning at C:/esp/v6.1/esp-idf/tools/cmake/component_validation.cmake:106 (message):
+  Private include directory
+  'C:/esp/v6.1/esp-idf/components/esp_wifi/wifi_apps/include/apps_private'
+  belongs to component esp_wifi but is being used by component
+  wpa_supplicant.  It is recommended to define the component dependency for
+  wpa_supplicant on the component esp_wifi, i.e.  'idf_component_register(...
+  PRIV_REQUIRES esp_wifi)' in the CMakeLists.txt of wpa_supplicant, and
+  specify the included directory as idf_component_register(...
+  PRIV_INCLUDE_DIRS <dir relative to component>) in the CMakeLists.txt of
+  component esp_wifi.
+Call Stack (most recent call first):
+  C:/esp/v6.1/esp-idf/tools/cmake/component_validation.cmake:130 (__component_validation_check_include_dirs)
+  C:/esp/v6.1/esp-idf/CMakeLists.txt:356 (__component_validation_run_checks)
+
+
+CMake Warning at C:/esp/v6.1/esp-idf/tools/cmake/component_validation.cmake:106 (message):
+  Private include directory
+  'C:/esp/v6.1/esp-idf/components/wpa_supplicant/src' belongs to component
+  wpa_supplicant but is being used by component esp_wifi.  It is recommended
+  to define the component dependency for esp_wifi on the component
+  wpa_supplicant, i.e.  'idf_component_register(...  PRIV_REQUIRES
+  wpa_supplicant)' in the CMakeLists.txt of esp_wifi, and specify the
+  included directory as idf_component_register(...  PRIV_INCLUDE_DIRS <dir
+  relative to component>) in the CMakeLists.txt of component wpa_supplicant.
+Call Stack (most recent call first):
+  C:/esp/v6.1/esp-idf/tools/cmake/component_validation.cmake:130 (__component_validation_check_include_dirs)
+  C:/esp/v6.1/esp-idf/CMakeLists.txt:356 (__component_validation_run_checks)
+
+
+CMake Warning at C:/esp/v6.1/esp-idf/tools/cmake/component_validation.cmake:106 (message):
+  Private include directory
+  'C:/esp/v6.1/esp-idf/components/wpa_supplicant/esp_supplicant/src' belongs
+  to component wpa_supplicant but is being used by component esp_wifi.  It is
+  recommended to define the component dependency for esp_wifi on the
+  component wpa_supplicant, i.e.  'idf_component_register(...  PRIV_REQUIRES
+  wpa_supplicant)' in the CMakeLists.txt of esp_wifi, and specify the
+  included directory as idf_component_register(...  PRIV_INCLUDE_DIRS <dir
+  relative to component>) in the CMakeLists.txt of component wpa_supplicant.
+Call Stack (most recent call first):
+  C:/esp/v6.1/esp-idf/tools/cmake/component_validation.cmake:130 (__component_validation_check_include_dirs)
+  C:/esp/v6.1/esp-idf/CMakeLists.txt:356 (__component_validation_run_checks)
+
+
+Traceback (most recent call last):
+  File "C:\esp\v6.1\esp-idf\components\esp_rom\gen_gdbinit.py", line 72, in <module>
+    gdbinit_lines = generate_gdbinit_rom_add_symbols(target)
+  File "C:\esp\v6.1\esp-idf\components\esp_rom\gen_gdbinit.py", line 31, in generate_gdbinit_rom_add_symbols
+    raise OSError(
+        'ESP_ROM_ELF_DIR environment variable is not defined. Please try to run IDF "install" and "export" scripts.'
+    )
+OSError: ESP_ROM_ELF_DIR environment variable is not defined. Please try to run IDF "install" and "export" scripts.
+CMake Warning at C:/esp/v6.1/esp-idf/tools/cmake/gdbinit.cmake:58 (message):
+  Error while generating esp_rom gdbinit
+Call Stack (most recent call first):
+  C:/esp/v6.1/esp-idf/tools/cmake/project.cmake:452 (__generate_gdbinit)
+  C:/esp/v6.1/esp-idf/tools/cmake/project.cmake:1101 (__project_info)
+  CMakeLists.txt:3 (project)
+
+
